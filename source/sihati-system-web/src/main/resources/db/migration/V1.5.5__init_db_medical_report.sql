@@ -1,0 +1,1 @@
+ALTER TABLE care.medical_report ADD COLUMN IF NOT EXISTS file_name VARCHAR(255);

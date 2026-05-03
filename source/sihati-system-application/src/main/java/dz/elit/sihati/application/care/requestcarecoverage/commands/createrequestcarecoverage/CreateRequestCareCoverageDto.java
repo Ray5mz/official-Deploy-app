@@ -1,0 +1,29 @@
+package dz.elit.sihati.application.care.requestcarecoverage.commands.createrequestcarecoverage;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.*;
+
+import java.time.LocalDate;
+
+@Getter
+@Setter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CreateRequestCareCoverageDto {
+
+  private String notes;
+
+  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+  private LocalDate startDate;
+
+  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+  private LocalDate endDate;
+
+  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+  private LocalDate demandeDate;
+
+  private String patientCode;
+  private String providerCode;
+
+}

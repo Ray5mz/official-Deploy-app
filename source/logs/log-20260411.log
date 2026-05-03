@@ -1,0 +1,4 @@
+2026-04-11 22:48:23.150 WAT [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: Patient with code=null does not exist"
+2026-04-11 22:48:38.339 WAT [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: Patient with code=null does not exist"
+2026-04-11 22:58:04.745 WAT [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: Patient with code=null does not exist"
+2026-04-11 23:02:55.430 WAT [Error] getAllClaimsFromToken : "gggggggg", "JWT strings must contain exactly 2 period characters. Found: 0"

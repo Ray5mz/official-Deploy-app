@@ -1,0 +1,6 @@
+2026-04-18 21:59:05.959 WAT [Error] getAllClaimsFromToken : "gggggggg", "JWT strings must contain exactly 2 period characters. Found: 0"
+2026-04-18 22:12:43.644 WAT [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: No upcoming accepted appointment found for patient with code: U008"
+2026-04-18 22:12:49.182 WAT [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: No upcoming accepted appointment found for patient with code: U005"
+2026-04-18 22:12:50.806 WAT [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: No upcoming accepted appointment found for patient with code: U005"
+2026-04-18 22:36:12.542 WAT [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: No upcoming accepted appointment found for patient with code: U005"
+2026-04-18 22:36:52.040 WAT [Error] BadCredentialsException "org.springframework.security.authentication.BadCredentialsException: Bad credentials"

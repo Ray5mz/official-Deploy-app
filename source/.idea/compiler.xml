@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for sihati-system" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.4.Final/mapstruct-processor-1.5.4.Final.jar" />
+        </processorPath>
+        <module name="sihati-system-persistence" />
+        <module name="sihati-system-web" />
+        <module name="sihati-system-application" />
+        <module name="sihati-system-infrastructure" />
+        <module name="sihati-system-utils" />
+        <module name="sihati-system-domain" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sihati-system" options="-parameters" />
+      <module name="sihati-system-application" options="-parameters" />
+      <module name="sihati-system-domain" options="-parameters" />
+      <module name="sihati-system-infrastructure" options="-parameters" />
+      <module name="sihati-system-persistence" options="-parameters" />
+      <module name="sihati-system-utils" options="-parameters" />
+      <module name="sihati-system-web" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,5 @@
+2026-04-29 13:39:09.806 WAT [Error] AccessDeniedException "org.springframework.security.access.AccessDeniedException: Accès refusé"
+2026-04-29 13:42:06.977 WAT [Error] AccessDeniedException "org.springframework.security.access.AccessDeniedException: Accès refusé"
+2026-04-29 15:29:37.852 WAT [Error] AccessDeniedException "org.springframework.security.access.AccessDeniedException: Accès refusé"
+2026-04-29 17:34:18.281 WAT [Error] AccessDeniedException "org.springframework.security.access.AccessDeniedException: Accès refusé"
+2026-04-29 17:34:18.290 WAT [Error] AccessDeniedException "org.springframework.security.access.AccessDeniedException: Accès refusé"

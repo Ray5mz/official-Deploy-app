@@ -1,0 +1,5 @@
+2026-03-26 23:11:22.312 CET [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: No upcoming accepted appointment found for patient with code: U006"
+2026-03-26 23:21:47.988 CET [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: No upcoming accepted appointment found for patient with code: U006"
+2026-03-26 23:21:53.684 CET [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: No upcoming accepted appointment found for patient with code: U006"
+2026-03-26 23:25:05.595 CET [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: No upcoming accepted appointment found for patient with code: U001"
+2026-03-26 23:27:38.076 CET [Error] ResourceNotFoundException "dz.elit.sihati.domain.exceptions.ResourceNotFoundException: No upcoming accepted appointment found for patient with code: U006"

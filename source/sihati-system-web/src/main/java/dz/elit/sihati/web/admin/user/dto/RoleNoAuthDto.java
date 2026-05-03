@@ -1,0 +1,14 @@
+package dz.elit.sihati.web.admin.user.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class RoleNoAuthDto {
+    private String id;
+    private String role;
+    private String designation;
+}

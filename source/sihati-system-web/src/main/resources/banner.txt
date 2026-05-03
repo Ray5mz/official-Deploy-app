@@ -1,0 +1,14 @@
+   _____                     _                             ______    __    _    __
+  / ___/    ____    _____   (_)   ____    ____ _          / ____/   / /   (_)  / /_
+  \__ \    / __ \  / ___/  / /   / __ \  / __ `/         / __/     / /   / /  / __/
+ ___/ /   / /_/ / / /     / /   / / / / / /_/ /         / /___    / /   / /  / /_
+/____/   / .___/ /_/     /_/   /_/ /_/  \__, /         /_____/   /_/   /_/   \__/
+        /_/                            /____/
+
+ SSSSS     III      H   H     AAAAA     TTTTTTT      III
+S           I       H   H     A   A        T          I
+S           I       H   H     A   A        T          I
+ SSSS       I       HHHHH     AAAAA        T          I
+     S      I       H   H     A   A        T          I
+S    S      I       H   H     A   A        T          I
+ SSSS      III      H   H     A   A       TTT        III

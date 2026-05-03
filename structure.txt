@@ -1,0 +1,2428 @@
+Folder PATH listing
+Volume serial number is 90C4-5A91
+C:.
+|   .gitignore
+|   gitignore
+|   README.md
+|   structure.txt
+|   
++---.idea
+|       202628.iml
+|       modules.xml
+|       PFE-SOSC.iml
+|       vcs.xml
+|       workspace.xml
+|       
++---key
+|       private.pem
+|       private_key.pem
+|       public_key.pem
+|       
++---script
+|       Rapport_Recette_Fonctionnelle_formation1et2.docx
+|       
+\---source
+    |   keystore
+    |   mvnw
+    |   mvnw.cmd
+    |   pom.xml
+    |   README.md
+    |   structure.txt
+    |   
+    +---.idea
+    |   |   .gitignore
+    |   |   .name
+    |   |   compiler.xml
+    |   |   dataSources.local.xml
+    |   |   dataSources.xml
+    |   |   db-forest-config.xml
+    |   |   diff-generator.xml
+    |   |   encodings.xml
+    |   |   jarRepositories.xml
+    |   |   jpa.xml
+    |   |   jpb-settings.xml
+    |   |   misc.xml
+    |   |   uiDesigner.xml
+    |   |   vcs.xml
+    |   |   workspace.xml
+    |   |   
+    |   +---dataSources
+    |   \---inspectionProfiles
+    |           Project_Default.xml
+    |           
+    +---logs
+    |       log-20260324.log
+    |       log-20260326.log
+    |       log-20260327.log
+    |       log-20260331.log
+    |       log-20260402.log
+    |       log-20260403.log
+    |       log-20260404.log
+    |       log-20260405.log
+    |       log-20260406.log
+    |       log-20260407.log
+    |       log-20260408.log
+    |       log-20260409.log
+    |       log-20260410.log
+    |       log-20260411.log
+    |       
+    +---sihati-system-application
+    |   |   pom.xml
+    |   |   
+    |   +---src
+    |   |   \---main
+    |   |       \---java
+    |   |           \---dz
+    |   |               \---elit
+    |   |                   \---sihati
+    |   |                       \---application
+    |   |                           +---admin
+    |   |                           |   +---organisationalstructure
+    |   |                           |   |   \---queries
+    |   |                           |   |       +---getassociatedorgstructuredetails
+    |   |                           |   |       |       GetAssocitedOrgStructureDetailsLoad.java
+    |   |                           |   |       |       GetAssocitedOrgStructureDetailsUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       +---getassocitedorgstructures
+    |   |                           |   |       |       GetAssocitedOrgStructureLoad.java
+    |   |                           |   |       |       GetAssocitedOrgStructureUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       +---getorgstructure
+    |   |                           |   |       |       GetOrgStructureDto.java
+    |   |                           |   |       |       GetOrgStructureDtoCommune.java
+    |   |                           |   |       |       GetOrgStructureLoad.java
+    |   |                           |   |       |       GetOrgStructureMapper.java
+    |   |                           |   |       |       GetOrgStructureService.java
+    |   |                           |   |       |       GetOrgStructureUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       +---getorgstructurebyparentalllist
+    |   |                           |   |       |       GetOrglStructureAllListDto.java
+    |   |                           |   |       |       GetOrgStructureAllListLoad.java
+    |   |                           |   |       |       GetOrgStructureAllListMapper.java
+    |   |                           |   |       |       GetOrgStructureAllListService.java
+    |   |                           |   |       |       GetOrgStructureAllListUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       +---getorgstructurebyparentlist
+    |   |                           |   |       |       GetOrgStructureByParentList.java
+    |   |                           |   |       |       GetOrgStructureByParentListDto.java
+    |   |                           |   |       |       GetOrgStructureByParentListMapper.java
+    |   |                           |   |       |       GetOrgStructureByParentListService.java
+    |   |                           |   |       |       GetOrgStructureByParentListUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       \---getorgstructurelist
+    |   |                           |   |               GetOrglStructureListDto.java
+    |   |                           |   |               GetOrgStructureListLoad.java
+    |   |                           |   |               GetOrgStructureListMapper.java
+    |   |                           |   |               GetOrgStructureListService.java
+    |   |                           |   |               GetOrgStructureListUseCase.java
+    |   |                           |   |               
+    |   |                           |   \---user
+    |   |                           |       \---queries
+    |   |                           |           +---getuser
+    |   |                           |           |       GetUserDtoResponse.java
+    |   |                           |           |       GetUserDtoResponseAuthority.java
+    |   |                           |           |       GetUserDtoResponseDomain.java
+    |   |                           |           |       GetUserDtoResponseRole.java
+    |   |                           |           |       GetUserDtoResponseStructure.java
+    |   |                           |           |       GetUserLoad.java
+    |   |                           |           |       GetUserMapper.java
+    |   |                           |           |       GetUserService.java
+    |   |                           |           |       GetUserUseCase.java
+    |   |                           |           |       
+    |   |                           |           +---getuserbycode
+    |   |                           |           |       GetUserByCodeDtoResponse.java
+    |   |                           |           |       GetUserByCodeLoad.java
+    |   |                           |           |       GetUserByCodeMapper.java
+    |   |                           |           |       GetUserByCodeService.java
+    |   |                           |           |       GetUserByCodeUseCase.java
+    |   |                           |           |       
+    |   |                           |           +---getuserbyemailorusername
+    |   |                           |           |       GetUserByEmailOrUserNameDtoResponse.java
+    |   |                           |           |       GetUserByEmailOrUserNameDtoResponseDomain.java
+    |   |                           |           |       GetUserByEmailOrUserNameDtoResponseRole.java
+    |   |                           |           |       GetUserByEmailOrUserNameDtoResponseStructure.java
+    |   |                           |           |       GetUserByEmailOrUsernamelDtoResponseAuthority.java
+    |   |                           |           |       GetUserByEmailOrUserNameLoad.java
+    |   |                           |           |       GetUserByEmailOrUserNameMapper.java
+    |   |                           |           |       GetUserByEmailOrUserNameService.java
+    |   |                           |           |       GetUserByEmailOrUserNameUseCase.java
+    |   |                           |           |       
+    |   |                           |           \---ispasswordchange
+    |   |                           |                   IsPasswordChange.java
+    |   |                           |                   IsPasswordChangeService.java
+    |   |                           |                   IsPasswordChangeUseCase.java
+    |   |                           |                   
+    |   |                           +---care
+    |   |                           |   +---ConstanteVitale
+    |   |                           |   |   \---queries
+    |   |                           |   |       +---GetConstanteVitaleByPatientCode
+    |   |                           |   |       |       GetConstanteVitaleByPatientDto.java
+    |   |                           |   |       |       GetConstanteVitaleByPatientLoad.java
+    |   |                           |   |       |       GetConstanteVitaleByPatientMapper.java
+    |   |                           |   |       |       GetConstanteVitaleByPatientService.java
+    |   |                           |   |       |       GetConstanteVitaleByPatientUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       +---getconsulting
+    |   |                           |   |       |       GetConstanteVitaleConsultDto.java
+    |   |                           |   |       |       GetConstanteVitaleConsultDtoResponse.java
+    |   |                           |   |       |       GetConstanteVitaleConsultLoad.java
+    |   |                           |   |       |       GetConstanteVitaleConsultService.java
+    |   |                           |   |       |       GetConstanteVitaleConsultUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       \---getlisting
+    |   |                           |   |               GetConstanteVitaleDto.java
+    |   |                           |   |               GetConstanteVitaleLoad.java
+    |   |                           |   |               GetConstanteVitaleService.java
+    |   |                           |   |               GetConstanteVitaleUseCase.java
+    |   |                           |   |               
+    |   |                           |   +---consultation
+    |   |                           |   |   \---queries
+    |   |                           |   |       +---getconsultation
+    |   |                           |   |       |       GetConsultationDto.java
+    |   |                           |   |       |       GetConsultationDtoResponse.java
+    |   |                           |   |       |       GetConsultationLoad.java
+    |   |                           |   |       |       GetConsultationMapper.java
+    |   |                           |   |       |       GetConsultationService.java
+    |   |                           |   |       |       GetConsultationUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       +---getConsultationByPatientCode
+    |   |                           |   |       |       GetConsultationByPatientDto.java
+    |   |                           |   |       |       GetConsultationByPatientLoad.java
+    |   |                           |   |       |       GetConsultationByPatientMapper.java
+    |   |                           |   |       |       GetConsultationByPatientResponseDto.java
+    |   |                           |   |       |       GetConsultationByPatientService.java
+    |   |                           |   |       |       GetConsultationByPatientUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       +---getconsultationlist
+    |   |                           |   |       |       GetConsultationListDto.java
+    |   |                           |   |       |       GetConsultationListLoad.java
+    |   |                           |   |       |       GetConsultationListMapper.java
+    |   |                           |   |       |       GetConsultationListService.java
+    |   |                           |   |       |       GetConsultationListUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       \---GetLastConsultation
+    |   |                           |   |               GetLastConsultationLoad.java
+    |   |                           |   |               GetLastConsultationMapper.java
+    |   |                           |   |               GetLastConsultationService.java
+    |   |                           |   |               GetLastConsultationUseCase.java
+    |   |                           |   |               LastConsultationDto.java
+    |   |                           |   |               
+    |   |                           |   +---dashboard
+    |   |                           |   |       ConstanteVitaleChartDto.java
+    |   |                           |   |       ConstanteVitaleService.java
+    |   |                           |   |       DashboardStatsDto.java
+    |   |                           |   |       DashboardStatsRepository.java
+    |   |                           |   |       GetDashboardStatsPort.java
+    |   |                           |   |       GetDashboardStatsService.java
+    |   |                           |   |       GetDashboardStatsUseCase.java
+    |   |                           |   |       GetLastConstanteVitalePort.java
+    |   |                           |   |       LastConstanteVitaleDto.java
+    |   |                           |   |       
+    |   |                           |   +---medicaldoc
+    |   |                           |   |   \---commands
+    |   |                           |   |       \---upload
+    |   |                           |   |               FileStoragePort.java
+    |   |                           |   |               LoadCareCoverageByCodePort.java
+    |   |                           |   |               MedicalDocDto.java
+    |   |                           |   |               SaveMedicalDocPort.java
+    |   |                           |   |               UploadMedicalDocService.java
+    |   |                           |   |               UploadMedicalDocUseCase.java
+    |   |                           |   |               
+    |   |                           |   +---MedReportDownload
+    |   |                           |   |       MedReportDownloadDto.java
+    |   |                           |   |       MedReportDownloadLoad.java
+    |   |                           |   |       MedReportDownloadService.java
+    |   |                           |   |       MedReportDownloadUseCase.java
+    |   |                           |   |       
+    |   |                           |   +---pathologie
+    |   |                           |   |       GetPathologieDto.java
+    |   |                           |   |       GetPathologieLoad.java
+    |   |                           |   |       GetPathologieMapper.java
+    |   |                           |   |       GetPathologieService.java
+    |   |                           |   |       GetPathologieUseCase.java
+    |   |                           |   |       
+    |   |                           |   +---RequestAppointment
+    |   |                           |   |   +---commands
+    |   |                           |   |   |   +---CancelRequestAppointment
+    |   |                           |   |   |   |       CancelRequestAppointmentDtoResponse.java
+    |   |                           |   |   |   |       CancelRequestAppointmentLoad.java
+    |   |                           |   |   |   |       CancelRequestAppointmentMapper.java
+    |   |                           |   |   |   |       CancelRequestAppointmentService.java
+    |   |                           |   |   |   |       CancelRequestAppointmentUseCase.java
+    |   |                           |   |   |   |       
+    |   |                           |   |   |   +---createrequestappointement
+    |   |                           |   |   |   |       CreateRequestAppointment.java
+    |   |                           |   |   |   |       CreateRequestAppointmentDto.java
+    |   |                           |   |   |   |       CreateRequestAppointmentDtoResponse.java
+    |   |                           |   |   |   |       CreateRequestAppointmentDtoResponseMedicalCenter.java
+    |   |                           |   |   |   |       CreateRequestAppointmentDtoResponsePatient.java
+    |   |                           |   |   |   |       CreateRequestAppointmentDtoResponseTimingDoctor.java
+    |   |                           |   |   |   |       CreateRequestAppointmentLoadPatient.java
+    |   |                           |   |   |   |       CreateRequestAppointmentLoadTimingDoctor.java
+    |   |                           |   |   |   |       CreateRequestAppointmentMapper.java
+    |   |                           |   |   |   |       CreateRequestAppointmentService.java
+    |   |                           |   |   |   |       CreateRequestAppointmentUseCase.java
+    |   |                           |   |   |   |       SaveTimingDoctor.java
+    |   |                           |   |   |   |       
+    |   |                           |   |   |   \---update
+    |   |                           |   |   |           UpdateRequestAppointment.java
+    |   |                           |   |   |           UpdateRequestAppointmentDto.java
+    |   |                           |   |   |           UpdateRequestAppointmentDtoResponse.java
+    |   |                           |   |   |           UpdateRequestAppointmentDtoResponseMedicalCenter.java
+    |   |                           |   |   |           UpdateRequestAppointmentDtoResponsePatient.java
+    |   |                           |   |   |           UpdateRequestAppointmentDtoResponseSpecialty.java
+    |   |                           |   |   |           UpdateRequestAppointmentDtoResponseTimingDoctor.java
+    |   |                           |   |   |           UpdateRequestAppointmentMapper.java
+    |   |                           |   |   |           UpdateRequestAppointmentService.java
+    |   |                           |   |   |           UpdateRequestAppointmentUseCase.java
+    |   |                           |   |   |           
+    |   |                           |   |   +---get
+    |   |                           |   |   |   |   GetRequestAppointmentDto.java
+    |   |                           |   |   |   |   GetRequestAppointmentLoad.java
+    |   |                           |   |   |   |   GetRequestAppointmentMapper.java
+    |   |                           |   |   |   |   GetRequestAppointmentService.java
+    |   |                           |   |   |   |   GetRequestAppointmentUseCase.java
+    |   |                           |   |   |   |   
+    |   |                           |   |   |   \---nearest
+    |   |                           |   |   |           GetNearestRequestAppointmentLoad.java
+    |   |                           |   |   |           GetNearestRequestAppointmentMapper.java
+    |   |                           |   |   |           GetNearestRequestAppointmentService.java
+    |   |                           |   |   |           GetNearestRequestAppointmentUseCase.java
+    |   |                           |   |   |           
+    |   |                           |   |   \---GetByPatientCode
+    |   |                           |   |           GetRequestAppointmentByPatientCodeDto.java
+    |   |                           |   |           GetRequestAppointmentByPatientCodeDtoResponse.java
+    |   |                           |   |           GetRequestAppointmentByPatientCodeLoad.java
+    |   |                           |   |           GetRequestAppointmentByPatientCodeMapper.java
+    |   |                           |   |           GetRequestAppointmentByPatientCodeService.java
+    |   |                           |   |           GetRequestAppointmentByPatientCodeUseCase.java
+    |   |                           |   |           
+    |   |                           |   +---requestcarecoverage
+    |   |                           |   |   +---commands
+    |   |                           |   |   |   +---cancelrequestcarecoverage
+    |   |                           |   |   |   |       CancelRequestCareCoverageDtoResponse.java
+    |   |                           |   |   |   |       CancelRequestCareCoverageLoad.java
+    |   |                           |   |   |   |       CancelRequestCareCoverageMapper.java
+    |   |                           |   |   |   |       CancelRequestCareCoverageService.java
+    |   |                           |   |   |   |       CancelRequestCareCoverageUseCase.java
+    |   |                           |   |   |   |       
+    |   |                           |   |   |   +---createrequestcarecoverage
+    |   |                           |   |   |   |       CreateRequestCareCoverage.java
+    |   |                           |   |   |   |       CreateRequestCareCoverageDto.java
+    |   |                           |   |   |   |       CreateRequestCareCoverageDtoResponse.java
+    |   |                           |   |   |   |       CreateRequestCareCoverageMapper.java
+    |   |                           |   |   |   |       CreateRequestCareCoveragesDtoResponseMedicalCenter.java
+    |   |                           |   |   |   |       CreateRequestCareCoveragesDtoResponsePatient.java
+    |   |                           |   |   |   |       CreateRequestCareCoveragesDtoResponseProvider.java
+    |   |                           |   |   |   |       CreateRequestCareCoveragesLoadMedicalCenter.java
+    |   |                           |   |   |   |       CreateRequestCareCoveragesLoadPatient.java
+    |   |                           |   |   |   |       CreateRequestCareCoveragesLoadProvider.java
+    |   |                           |   |   |   |       CreateRequestCareCoveragesSavePatient.java
+    |   |                           |   |   |   |       CreateRequestCareCoverageUseCase.java
+    |   |                           |   |   |   |       CreatRequestCareCoverageService.java
+    |   |                           |   |   |   |       
+    |   |                           |   |   |   \---updaterequestcarecoverage
+    |   |                           |   |   |           UpdateRequestCareCoverage.java
+    |   |                           |   |   |           UpdateRequestCareCoverageDto.java
+    |   |                           |   |   |           UpdateRequestCareCoverageDtoResponse.java
+    |   |                           |   |   |           UpdateRequestCareCoverageService.java
+    |   |                           |   |   |           UpdateRequestCareCoverageUseCase.java
+    |   |                           |   |   |           
+    |   |                           |   |   \---queries
+    |   |                           |   |       +---downloadcarecoverage
+    |   |                           |   |       |       CareCoverageReportGenerator.java
+    |   |                           |   |       |       DownloadCareCoverageLoadCoverage.java
+    |   |                           |   |       |       DownloadCareCoverageService.java
+    |   |                           |   |       |       DownloadCareCoverageUseCase.java
+    |   |                           |   |       |       
+    |   |                           |   |       \---getrequestcarecoverage
+    |   |                           |   |               GetRequestCareCoverageByPatientLoad.java
+    |   |                           |   |               GetRequestCareCoverageByPatientLoadPatient.java
+    |   |                           |   |               GetRequestCareCoverageByPatientService.java
+    |   |                           |   |               GetRequestCareCoverageByPatientUseCase.java
+    |   |                           |   |               GetRequestCareCoverageDto.java
+    |   |                           |   |               GetRequestCareCoverageDtoResponse.java
+    |   |                           |   |               GetRequestCareCoverageLoad.java
+    |   |                           |   |               GetRequestCareCoverageMapper.java
+    |   |                           |   |               GetRequestCareCoverageService.java
+    |   |                           |   |               GetRequestCareCoverageUseCase.java
+    |   |                           |   |               
+    |   |                           |   \---TimingDoctor
+    |   |                           |       \---queries
+    |   |                           |           +---getbyhealthpro
+    |   |                           |           |       GetTimingDocByHealthProDto.java
+    |   |                           |           |       GetTimingDocByHealthProLoad.java
+    |   |                           |           |       GetTimingDocByHealthProMapper.java
+    |   |                           |           |       GetTimingDocByHealthProService.java
+    |   |                           |           |       GetTimingDocByHealthProUseCase.java
+    |   |                           |           |       
+    |   |                           |           +---getlistbyspe
+    |   |                           |           |       GetDoctorTimingSpeDto.java
+    |   |                           |           |       GetTimingDoctorSpeLoad.java
+    |   |                           |           |       GetTimingDoctorSpeMapper.java
+    |   |                           |           |       GetTimingDoctorSpeService.java
+    |   |                           |           |       GetTimingDoctorSpeUseCase.java
+    |   |                           |           |       
+    |   |                           |           \---getlisting
+    |   |                           |                   GetDoctorTimingDto.java
+    |   |                           |                   GetTimingDoctorLoad.java
+    |   |                           |                   GetTimingDoctorService.java
+    |   |                           |                   GetTimingDoctorUseCase.java
+    |   |                           |                   
+    |   |                           +---communs
+    |   |                           |   +---generators
+    |   |                           |   |       UnitCodeGenerator.java
+    |   |                           |   |       
+    |   |                           |   \---NewNotification
+    |   |                           |       +---CreateNewNotification
+    |   |                           |       |       CreateNewNotification.java
+    |   |                           |       |       CreateNewNotificationDto.java
+    |   |                           |       |       CreateNewNotificationDtoResponse.java
+    |   |                           |       |       CreateNewNotificationDtoResponsePatient.java
+    |   |                           |       |       CreateNewNotificationLoadPatient.java
+    |   |                           |       |       CreateNewNotificationLoadRequestAppointment.java
+    |   |                           |       |       CreateNewNotificationLoadRequestCareCoverage.java
+    |   |                           |       |       CreateNewNotificationMapper.java
+    |   |                           |       |       CreateNewNotificationService.java
+    |   |                           |       |       CreateNewNotificationUseCase.java
+    |   |                           |       |       GetMaxNotificationCode.java
+    |   |                           |       |       
+    |   |                           |       +---GetByPatient
+    |   |                           |       |       GetNewNotificationsByPatientCodeDto.java
+    |   |                           |       |       GetNewNotificationsByPatientCodeLoad.java
+    |   |                           |       |       GetNewNotificationsByPatientCodeMapper.java
+    |   |                           |       |       GetNewNotificationsByPatientCodeService.java
+    |   |                           |       |       GetNewNotificationsByPatientCodeUseCase.java
+    |   |                           |       |       
+    |   |                           |       +---GetLatestOne
+    |   |                           |       |       GetLatestNotificationDto.java
+    |   |                           |       |       GetLatestNotificationLoad.java
+    |   |                           |       |       GetLatestNotificationMapper.java
+    |   |                           |       |       GetLatestNotificationService.java
+    |   |                           |       |       GetLatestNotificationUseCase.java
+    |   |                           |       |       
+    |   |                           |       +---GetNewNotification
+    |   |                           |       |       GetNewNotificationDto.java
+    |   |                           |       |       GetNewNotificationLoad.java
+    |   |                           |       |       GetNewNotificationMapper.java
+    |   |                           |       |       GetNewNotificationService.java
+    |   |                           |       |       GetNewNotificationUseCase.java
+    |   |                           |       |       
+    |   |                           |       \---MarkAsSeen
+    |   |                           |               MarkAsSeenDtoResponse.java
+    |   |                           |               MarkAsSeenLoad.java
+    |   |                           |               MarkAsSeenMapper.java
+    |   |                           |               MarkAsSeenService.java
+    |   |                           |               MarkAsSeenUseCase.java
+    |   |                           |               UpdateNewNotification.java
+    |   |                           |               
+    |   |                           +---configuration
+    |   |                           |   \---ping
+    |   |                           |           PingCordinator.java
+    |   |                           |           PingCordinatorImpl.java
+    |   |                           |           PingService.java
+    |   |                           |           PingUseCase.java
+    |   |                           |           
+    |   |                           +---notification
+    |   |                           |       NotificationDto.java
+    |   |                           |       SendNotificationPort.java
+    |   |                           |       
+    |   |                           \---reference
+    |   |                               +---agent
+    |   |                               |       AyantDroitParentDto.java
+    |   |                               |       AyantDroitParentLoad.java
+    |   |                               |       AyantDroitParentMapper.java
+    |   |                               |       AyantDroitParentService.java
+    |   |                               |       AyantDroitParentUseCase.java
+    |   |                               |       
+    |   |                               +---ayantdroit
+    |   |                               |       AyantDroitByEmployeeNumberDto.java
+    |   |                               |       AyantDroitByEmployeeNumberLoad.java
+    |   |                               |       AyantDroitByEmployeeNumberMapper.java
+    |   |                               |       AyantDroitByEmployeeNumberService.java
+    |   |                               |       AyantDroitByEmployeeNumberUseCase.java
+    |   |                               |       
+    |   |                               +---commune
+    |   |                               |   \---queries
+    |   |                               |       \---getcommunelist
+    |   |                               |               CommuneListDto.java
+    |   |                               |               GetCommuneListMapper.java
+    |   |                               |               GetCommuneListService.java
+    |   |                               |               GetCommuneListUseCase.java
+    |   |                               |               LoadCommuneList.java
+    |   |                               |               
+    |   |                               +---healthprofessionalmedicalcenter
+    |   |                               |       GetHealthProfessionalMedicalCenterPort.java
+    |   |                               |       GetHealthProfessionalMedicalCenterService.java
+    |   |                               |       GetHealthProfessionalMedicalCenterUseCase.java
+    |   |                               |       HealthProfessionalMedicalCenterDto.java
+    |   |                               |       
+    |   |                               +---patient
+    |   |                               |   \---queries
+    |   |                               |           FindPatientBycode.java
+    |   |                               |           GetPatientByCodeDtoResponse.java
+    |   |                               |           GetPatientByCodeLoad.java
+    |   |                               |           GetPatientByCodeMapper.java
+    |   |                               |           GetPatientByCodeService.java
+    |   |                               |           GetPatientByCodeUseCase.java
+    |   |                               |           GetPatientDto.java
+    |   |                               |           
+    |   |                               +---Provider
+    |   |                               |   +---listing
+    |   |                               |   |       GetProviderDto.java
+    |   |                               |   |       GetProviderLoad.java
+    |   |                               |   |       GetProviderService.java
+    |   |                               |   |       GetProviderUseCase.java
+    |   |                               |   |       
+    |   |                               |   \---providerbycat
+    |   |                               |           GetProviderBySpeDto.java
+    |   |                               |           GetProviderBySpeLoad.java
+    |   |                               |           GetProviderBySpeMapper.java
+    |   |                               |           GetProviderBySpeService.java
+    |   |                               |           GetProviderBySpeUseCase.java
+    |   |                               |           
+    |   |                               +---refcode
+    |   |                               |   +---command
+    |   |                               |   |   +---createrefcode
+    |   |                               |   |   |       CreateRefCode.java
+    |   |                               |   |   |       CreateRefCodeDto.java
+    |   |                               |   |   |       CreateRefCodeDtoResponse.java
+    |   |                               |   |   |       CreateRefCodeLoadRefCodeDomain.java
+    |   |                               |   |   |       CreateRefCodeMapper.java
+    |   |                               |   |   |       CreateRefCodeService.java
+    |   |                               |   |   |       CreateRefCodeUseCase.java
+    |   |                               |   |   |       
+    |   |                               |   |   +---deleterefcode
+    |   |                               |   |   |       DeleteRefCode.java
+    |   |                               |   |   |       DeleteRefCodeService.java
+    |   |                               |   |   |       DeleteRefCodeUseCase.java
+    |   |                               |   |   |       
+    |   |                               |   |   \---updaterefcode
+    |   |                               |   |           UpdateRefCode.java
+    |   |                               |   |           UpdateRefCodeDto.java
+    |   |                               |   |           UpdateRefCodeDtoResponse.java
+    |   |                               |   |           UpdateRefCodeMapper.java
+    |   |                               |   |           UpdateRefCodeService.java
+    |   |                               |   |           UpdateRefCodeUseCase.java
+    |   |                               |   |           
+    |   |                               |   \---queries
+    |   |                               |       +---getrefcode
+    |   |                               |       |       GetRefCodeDto.java
+    |   |                               |       |       GetRefCodeLoad.java
+    |   |                               |       |       GetRefCodeMapper.java
+    |   |                               |       |       GetRefCodeService.java
+    |   |                               |       |       GetRefCodeUseCase.java
+    |   |                               |       |       
+    |   |                               |       \---getrefcodelist
+    |   |                               |               GetNomDomain.java
+    |   |                               |               GetRefCodeListDto.java
+    |   |                               |               GetRefCodeListDtoDetails.java
+    |   |                               |               GetRefCodeListLoad.java
+    |   |                               |               GetRefCodeListLoadDomain.java
+    |   |                               |               GetRefCodeListMapper.java
+    |   |                               |               GetRefCodeListService.java
+    |   |                               |               GetRefCodeListUseCase.java
+    |   |                               |               
+    |   |                               +---refcodedomain
+    |   |                               |   +---commands
+    |   |                               |   |   +---createrefcodedomain
+    |   |                               |   |   |       CreateRefCodeDomain.java
+    |   |                               |   |   |       CreateRefCodeDomainDto.java
+    |   |                               |   |   |       CreateRefCodeDomainDtoResponse.java
+    |   |                               |   |   |       CreateRefCodeDomainLoad.java
+    |   |                               |   |   |       CreateRefCodeDomainMapper.java
+    |   |                               |   |   |       CreateRefCodeDomainService.java
+    |   |                               |   |   |       CreateRefCodeDomainUseCase.java
+    |   |                               |   |   |       
+    |   |                               |   |   +---deleterefcodedomain
+    |   |                               |   |   |       DeleteRefCodeDomain.java
+    |   |                               |   |   |       DeleteRefCodeDomainService.java
+    |   |                               |   |   |       DeleteRefCodeDomainUseCase.java
+    |   |                               |   |   |       
+    |   |                               |   |   \---updaterefcodedomain
+    |   |                               |   |           UpdateRefCodeDomain.java
+    |   |                               |   |           UpdateRefCodeDomainDto.java
+    |   |                               |   |           UpdateRefCodeDomainDtoResponse.java
+    |   |                               |   |           UpdateRefCodeDomainLoad.java
+    |   |                               |   |           UpdateRefCodeDomainMapper.java
+    |   |                               |   |           UpdateRefCodeDomainService.java
+    |   |                               |   |           UpdateRefCodeDomainUseCase.java
+    |   |                               |   |           
+    |   |                               |   \---queries
+    |   |                               |       \---getdomainrefcodelist
+    |   |                               |           \---getdomainrefcodelist
+    |   |                               |                   GetDomainRefCodeListDto.java
+    |   |                               |                   GetDomainRefCodeListLoad.java
+    |   |                               |                   GetDomainRefCodeListMapper.java
+    |   |                               |                   GetDomainRefCodeListService.java
+    |   |                               |                   GetDomainRefCodeListUseCase.java
+    |   |                               |                   
+    |   |                               +---specialty
+    |   |                               |       GetSpecialtyDto.java
+    |   |                               |       GetSpecialtyLoad.java
+    |   |                               |       GetSpecialtyMapper.java
+    |   |                               |       GetSpecialtyService.java
+    |   |                               |       GetSpecialtyUseCase.java
+    |   |                               |       
+    |   |                               \---wilaya
+    |   |                                   \---queries
+    |   |                                       +---getwilaya
+    |   |                                       |       GetWilayaMapper.java
+    |   |                                       |       GetWilayaService.java
+    |   |                                       |       GetWilayaUseCase.java
+    |   |                                       |       LoadWilaya.java
+    |   |                                       |       WilayaDto.java
+    |   |                                       |       
+    |   |                                       \---getwilayalist
+    |   |                                               GetWilayaListMapper.java
+    |   |                                               GetWilayaListService.java
+    |   |                                               GetWilayaListUseCase.java
+    |   |                                               LoadWilayaList.java
+    |   |                                               WilayaListDto.java
+    |   |                                               
+    |   \---target
+    |       +---classes
+    |       |   \---dz
+    |       |       \---elit
+    |       |           \---sihati
+    |       |               \---application
+    |       |                   +---admin
+    |       |                   |   +---organisationalstructure
+    |       |                   |   |   \---queries
+    |       |                   |   |       +---getassociatedorgstructuredetails
+    |       |                   |   |       |       GetAssocitedOrgStructureDetailsLoad.class
+    |       |                   |   |       |       GetAssocitedOrgStructureDetailsUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       +---getassocitedorgstructures
+    |       |                   |   |       |       GetAssocitedOrgStructureLoad.class
+    |       |                   |   |       |       GetAssocitedOrgStructureUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       +---getorgstructure
+    |       |                   |   |       |       GetOrgStructureDto.class
+    |       |                   |   |       |       GetOrgStructureDtoCommune.class
+    |       |                   |   |       |       GetOrgStructureLoad.class
+    |       |                   |   |       |       GetOrgStructureMapper.class
+    |       |                   |   |       |       GetOrgStructureMapperImpl.class
+    |       |                   |   |       |       GetOrgStructureService.class
+    |       |                   |   |       |       GetOrgStructureUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       +---getorgstructurebyparentalllist
+    |       |                   |   |       |       GetOrglStructureAllListDto.class
+    |       |                   |   |       |       GetOrgStructureAllListLoad.class
+    |       |                   |   |       |       GetOrgStructureAllListMapper.class
+    |       |                   |   |       |       GetOrgStructureAllListMapperImpl.class
+    |       |                   |   |       |       GetOrgStructureAllListService.class
+    |       |                   |   |       |       GetOrgStructureAllListUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       +---getorgstructurebyparentlist
+    |       |                   |   |       |       GetOrgStructureByParentList.class
+    |       |                   |   |       |       GetOrgStructureByParentListDto.class
+    |       |                   |   |       |       GetOrgStructureByParentListMapper.class
+    |       |                   |   |       |       GetOrgStructureByParentListMapperImpl.class
+    |       |                   |   |       |       GetOrgStructureByParentListService.class
+    |       |                   |   |       |       GetOrgStructureByParentListUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       \---getorgstructurelist
+    |       |                   |   |               GetOrglStructureListDto.class
+    |       |                   |   |               GetOrgStructureListLoad.class
+    |       |                   |   |               GetOrgStructureListMapper.class
+    |       |                   |   |               GetOrgStructureListMapperImpl.class
+    |       |                   |   |               GetOrgStructureListService.class
+    |       |                   |   |               GetOrgStructureListUseCase.class
+    |       |                   |   |               
+    |       |                   |   \---user
+    |       |                   |       \---queries
+    |       |                   |           +---getuser
+    |       |                   |           |       GetUserDtoResponse.class
+    |       |                   |           |       GetUserDtoResponseAuthority.class
+    |       |                   |           |       GetUserDtoResponseDomain.class
+    |       |                   |           |       GetUserDtoResponseRole.class
+    |       |                   |           |       GetUserDtoResponseStructure.class
+    |       |                   |           |       GetUserLoad.class
+    |       |                   |           |       GetUserMapper.class
+    |       |                   |           |       GetUserMapperImpl.class
+    |       |                   |           |       GetUserService.class
+    |       |                   |           |       GetUserUseCase.class
+    |       |                   |           |       
+    |       |                   |           +---getuserbycode
+    |       |                   |           |       GetUserByCodeDtoResponse.class
+    |       |                   |           |       GetUserByCodeLoad.class
+    |       |                   |           |       GetUserByCodeMapper.class
+    |       |                   |           |       GetUserByCodeMapperImpl.class
+    |       |                   |           |       GetUserByCodeService.class
+    |       |                   |           |       GetUserByCodeUseCase.class
+    |       |                   |           |       
+    |       |                   |           +---getuserbyemailorusername
+    |       |                   |           |       GetUserByEmailOrUserNameDtoResponse.class
+    |       |                   |           |       GetUserByEmailOrUserNameDtoResponseDomain.class
+    |       |                   |           |       GetUserByEmailOrUserNameDtoResponseRole.class
+    |       |                   |           |       GetUserByEmailOrUserNameDtoResponseStructure.class
+    |       |                   |           |       GetUserByEmailOrUsernamelDtoResponseAuthority.class
+    |       |                   |           |       GetUserByEmailOrUserNameLoad.class
+    |       |                   |           |       GetUserByEmailOrUserNameMapper.class
+    |       |                   |           |       GetUserByEmailOrUserNameMapperImpl.class
+    |       |                   |           |       GetUserByEmailOrUserNameService.class
+    |       |                   |           |       GetUserByEmailOrUserNameUseCase.class
+    |       |                   |           |       
+    |       |                   |           \---ispasswordchange
+    |       |                   |                   IsPasswordChange.class
+    |       |                   |                   IsPasswordChangeService.class
+    |       |                   |                   IsPasswordChangeUseCase.class
+    |       |                   |                   
+    |       |                   +---care
+    |       |                   |   +---ConstanteVitale
+    |       |                   |   |   \---queries
+    |       |                   |   |       +---GetConstanteVitaleByPatientCode
+    |       |                   |   |       |       GetConstanteVitaleByPatientDto.class
+    |       |                   |   |       |       GetConstanteVitaleByPatientLoad.class
+    |       |                   |   |       |       GetConstanteVitaleByPatientMapper.class
+    |       |                   |   |       |       GetConstanteVitaleByPatientMapperImpl.class
+    |       |                   |   |       |       GetConstanteVitaleByPatientService.class
+    |       |                   |   |       |       GetConstanteVitaleByPatientUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       +---getconsulting
+    |       |                   |   |       |       GetConstanteVitaleConsultDto.class
+    |       |                   |   |       |       GetConstanteVitaleConsultDtoResponse.class
+    |       |                   |   |       |       GetConstanteVitaleConsultLoad.class
+    |       |                   |   |       |       GetConstanteVitaleConsultService.class
+    |       |                   |   |       |       GetConstanteVitaleConsultUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       \---getlisting
+    |       |                   |   |               GetConstanteVitaleDto.class
+    |       |                   |   |               GetConstanteVitaleLoad.class
+    |       |                   |   |               GetConstanteVitaleService.class
+    |       |                   |   |               GetConstanteVitaleUseCase.class
+    |       |                   |   |               
+    |       |                   |   +---consultation
+    |       |                   |   |   \---queries
+    |       |                   |   |       +---getconsultation
+    |       |                   |   |       |       GetConsultationDto.class
+    |       |                   |   |       |       GetConsultationDtoResponse.class
+    |       |                   |   |       |       GetConsultationLoad.class
+    |       |                   |   |       |       GetConsultationMapper.class
+    |       |                   |   |       |       GetConsultationMapperImpl.class
+    |       |                   |   |       |       GetConsultationService.class
+    |       |                   |   |       |       GetConsultationUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       +---getConsultationByPatientCode
+    |       |                   |   |       |       GetConsultationByPatientDto.class
+    |       |                   |   |       |       GetConsultationByPatientLoad.class
+    |       |                   |   |       |       GetConsultationByPatientMapper.class
+    |       |                   |   |       |       GetConsultationByPatientMapperImpl.class
+    |       |                   |   |       |       GetConsultationByPatientResponseDto.class
+    |       |                   |   |       |       GetConsultationByPatientService.class
+    |       |                   |   |       |       GetConsultationByPatientUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       +---getconsultationlist
+    |       |                   |   |       |       GetConsultationListDto.class
+    |       |                   |   |       |       GetConsultationListLoad.class
+    |       |                   |   |       |       GetConsultationListMapper.class
+    |       |                   |   |       |       GetConsultationListMapperImpl.class
+    |       |                   |   |       |       GetConsultationListService.class
+    |       |                   |   |       |       GetConsultationListUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       \---GetLastConsultation
+    |       |                   |   |               GetLastConsultationLoad.class
+    |       |                   |   |               GetLastConsultationMapper.class
+    |       |                   |   |               GetLastConsultationMapperImpl.class
+    |       |                   |   |               GetLastConsultationService.class
+    |       |                   |   |               GetLastConsultationUseCase.class
+    |       |                   |   |               LastConsultationDto.class
+    |       |                   |   |               
+    |       |                   |   +---dashboard
+    |       |                   |   |       ConstanteVitaleChartDto$ConstanteVitaleChartDtoBuilder.class
+    |       |                   |   |       ConstanteVitaleChartDto.class
+    |       |                   |   |       ConstanteVitaleService.class
+    |       |                   |   |       DashboardStatsDto$DashboardStatsDtoBuilder.class
+    |       |                   |   |       DashboardStatsDto.class
+    |       |                   |   |       DashboardStatsRepository.class
+    |       |                   |   |       GetDashboardStatsPort.class
+    |       |                   |   |       GetDashboardStatsService.class
+    |       |                   |   |       GetDashboardStatsUseCase.class
+    |       |                   |   |       GetLastConstanteVitalePort.class
+    |       |                   |   |       LastConstanteVitaleDto$LastConstanteVitaleDtoBuilder.class
+    |       |                   |   |       LastConstanteVitaleDto.class
+    |       |                   |   |       
+    |       |                   |   +---medicaldoc
+    |       |                   |   |   \---commands
+    |       |                   |   |       \---upload
+    |       |                   |   |               FileStoragePort.class
+    |       |                   |   |               LoadCareCoverageByCodePort.class
+    |       |                   |   |               MedicalDocDto$MedicalDocDtoBuilder.class
+    |       |                   |   |               MedicalDocDto.class
+    |       |                   |   |               SaveMedicalDocPort.class
+    |       |                   |   |               UploadMedicalDocService.class
+    |       |                   |   |               UploadMedicalDocUseCase.class
+    |       |                   |   |               
+    |       |                   |   +---MedReportDownload
+    |       |                   |   |       MedReportDownloadDto.class
+    |       |                   |   |       MedReportDownloadLoad.class
+    |       |                   |   |       MedReportDownloadService.class
+    |       |                   |   |       MedReportDownloadUseCase.class
+    |       |                   |   |       
+    |       |                   |   +---pathologie
+    |       |                   |   |       GetPathologieDto$GetPathologieDtoBuilder.class
+    |       |                   |   |       GetPathologieDto.class
+    |       |                   |   |       GetPathologieLoad.class
+    |       |                   |   |       GetPathologieMapper.class
+    |       |                   |   |       GetPathologieMapperImpl.class
+    |       |                   |   |       GetPathologieService.class
+    |       |                   |   |       GetPathologieUseCase.class
+    |       |                   |   |       
+    |       |                   |   +---RequestAppointment
+    |       |                   |   |   +---commands
+    |       |                   |   |   |   +---CancelRequestAppointment
+    |       |                   |   |   |   |       CancelRequestAppointmentDtoResponse.class
+    |       |                   |   |   |   |       CancelRequestAppointmentLoad.class
+    |       |                   |   |   |   |       CancelRequestAppointmentMapper.class
+    |       |                   |   |   |   |       CancelRequestAppointmentMapperImpl.class
+    |       |                   |   |   |   |       CancelRequestAppointmentService.class
+    |       |                   |   |   |   |       CancelRequestAppointmentUseCase.class
+    |       |                   |   |   |   |       
+    |       |                   |   |   |   +---createrequestappointement
+    |       |                   |   |   |   |       CreateAppointmentService.class
+    |       |                   |   |   |   |       CreateRequestAppointment.class
+    |       |                   |   |   |   |       CreateRequestAppointmentDto.class
+    |       |                   |   |   |   |       CreateRequestAppointmentDtoResponse.class
+    |       |                   |   |   |   |       CreateRequestAppointmentDtoResponseMedicalCenter.class
+    |       |                   |   |   |   |       CreateRequestAppointmentDtoResponsePatient.class
+    |       |                   |   |   |   |       CreateRequestAppointmentDtoResponseTimingDoctor.class
+    |       |                   |   |   |   |       CreateRequestAppointmentLoadPatient.class
+    |       |                   |   |   |   |       CreateRequestAppointmentLoadTimingDoctor.class
+    |       |                   |   |   |   |       CreateRequestAppointmentMapper.class
+    |       |                   |   |   |   |       CreateRequestAppointmentMapperImpl.class
+    |       |                   |   |   |   |       CreateRequestAppointmentUseCase.class
+    |       |                   |   |   |   |       SaveTimingDoctor.class
+    |       |                   |   |   |   |       
+    |       |                   |   |   |   \---update
+    |       |                   |   |   |           UpdateRequestAppointment.class
+    |       |                   |   |   |           UpdateRequestAppointmentDto.class
+    |       |                   |   |   |           UpdateRequestAppointmentDtoResponse.class
+    |       |                   |   |   |           UpdateRequestAppointmentDtoResponseMedicalCenter.class
+    |       |                   |   |   |           UpdateRequestAppointmentDtoResponsePatient.class
+    |       |                   |   |   |           UpdateRequestAppointmentDtoResponseSpecialty.class
+    |       |                   |   |   |           UpdateRequestAppointmentDtoResponseTimingDoctor.class
+    |       |                   |   |   |           UpdateRequestAppointmentMapper.class
+    |       |                   |   |   |           UpdateRequestAppointmentMapperImpl.class
+    |       |                   |   |   |           UpdateRequestAppointmentService.class
+    |       |                   |   |   |           UpdateRequestAppointmentUseCase.class
+    |       |                   |   |   |           
+    |       |                   |   |   +---get
+    |       |                   |   |   |   |   GetRequestAppointmentDto.class
+    |       |                   |   |   |   |   GetRequestAppointmentLoad.class
+    |       |                   |   |   |   |   GetRequestAppointmentMapper.class
+    |       |                   |   |   |   |   GetRequestAppointmentMapperImpl.class
+    |       |                   |   |   |   |   GetRequestAppointmentService.class
+    |       |                   |   |   |   |   GetRequestAppointmentUseCase.class
+    |       |                   |   |   |   |   
+    |       |                   |   |   |   \---nearest
+    |       |                   |   |   |           GetNearestRequestAppointmentLoad.class
+    |       |                   |   |   |           GetNearestRequestAppointmentMapper.class
+    |       |                   |   |   |           GetNearestRequestAppointmentMapperImpl.class
+    |       |                   |   |   |           GetNearestRequestAppointmentService.class
+    |       |                   |   |   |           GetNearestRequestAppointmentUseCase.class
+    |       |                   |   |   |           
+    |       |                   |   |   \---GetByPatientCode
+    |       |                   |   |           GetRequestAppointmentByPatientCodeDto.class
+    |       |                   |   |           GetRequestAppointmentByPatientCodeDtoResponse.class
+    |       |                   |   |           GetRequestAppointmentByPatientCodeLoad.class
+    |       |                   |   |           GetRequestAppointmentByPatientCodeMapper.class
+    |       |                   |   |           GetRequestAppointmentByPatientCodeMapperImpl.class
+    |       |                   |   |           GetRequestAppointmentByPatientCodeService.class
+    |       |                   |   |           GetRequestAppointmentByPatientCodeUseCase.class
+    |       |                   |   |           
+    |       |                   |   +---requestcarecoverage
+    |       |                   |   |   +---commands
+    |       |                   |   |   |   +---cancelrequestcarecoverage
+    |       |                   |   |   |   |       CancelRequestCareCoverageDtoResponse.class
+    |       |                   |   |   |   |       CancelRequestCareCoverageLoad.class
+    |       |                   |   |   |   |       CancelRequestCareCoverageMapper.class
+    |       |                   |   |   |   |       CancelRequestCareCoverageMapperImpl.class
+    |       |                   |   |   |   |       CancelRequestCareCoverageService.class
+    |       |                   |   |   |   |       CancelRequestCareCoverageUseCase.class
+    |       |                   |   |   |   |       
+    |       |                   |   |   |   +---createrequestcarecoverage
+    |       |                   |   |   |   |       CreateCareCoverageService.class
+    |       |                   |   |   |   |       CreateRequestCareCoverage.class
+    |       |                   |   |   |   |       CreateRequestCareCoverageDto.class
+    |       |                   |   |   |   |       CreateRequestCareCoverageDtoResponse.class
+    |       |                   |   |   |   |       CreateRequestCareCoverageMapper.class
+    |       |                   |   |   |   |       CreateRequestCareCoverageMapperImpl.class
+    |       |                   |   |   |   |       CreateRequestCareCoveragesDtoResponseMedicalCenter.class
+    |       |                   |   |   |   |       CreateRequestCareCoveragesDtoResponsePatient.class
+    |       |                   |   |   |   |       CreateRequestCareCoveragesDtoResponseProvider.class
+    |       |                   |   |   |   |       CreateRequestCareCoveragesLoadMedicalCenter.class
+    |       |                   |   |   |   |       CreateRequestCareCoveragesLoadPatient.class
+    |       |                   |   |   |   |       CreateRequestCareCoveragesLoadProvider.class
+    |       |                   |   |   |   |       CreateRequestCareCoveragesSavePatient.class
+    |       |                   |   |   |   |       CreateRequestCareCoverageUseCase.class
+    |       |                   |   |   |   |       
+    |       |                   |   |   |   \---updaterequestcarecoverage
+    |       |                   |   |   |           UpdateRequestCareCoverage.class
+    |       |                   |   |   |           UpdateRequestCareCoverageDto.class
+    |       |                   |   |   |           UpdateRequestCareCoverageDtoResponse.class
+    |       |                   |   |   |           UpdateRequestCareCoverageService.class
+    |       |                   |   |   |           UpdateRequestCareCoverageUseCase.class
+    |       |                   |   |   |           
+    |       |                   |   |   \---queries
+    |       |                   |   |       +---downloadcarecoverage
+    |       |                   |   |       |       CareCoverageReportGenerator.class
+    |       |                   |   |       |       DownloadCareCoverageLoadCoverage.class
+    |       |                   |   |       |       DownloadCareCoverageService.class
+    |       |                   |   |       |       DownloadCareCoverageUseCase.class
+    |       |                   |   |       |       
+    |       |                   |   |       \---getrequestcarecoverage
+    |       |                   |   |               GetRequestCareCoverageByPatientLoad.class
+    |       |                   |   |               GetRequestCareCoverageByPatientLoadPatient.class
+    |       |                   |   |               GetRequestCareCoverageByPatientService.class
+    |       |                   |   |               GetRequestCareCoverageByPatientUseCase.class
+    |       |                   |   |               GetRequestCareCoverageDto.class
+    |       |                   |   |               GetRequestCareCoverageDtoResponse.class
+    |       |                   |   |               GetRequestCareCoverageLoad.class
+    |       |                   |   |               GetRequestCareCoverageMapper.class
+    |       |                   |   |               GetRequestCareCoverageMapperImpl.class
+    |       |                   |   |               GetRequestCareCoverageService.class
+    |       |                   |   |               GetRequestCareCoverageUseCase.class
+    |       |                   |   |               
+    |       |                   |   \---TimingDoctor
+    |       |                   |       \---queries
+    |       |                   |           +---getbyhealthpro
+    |       |                   |           |       GetTimingDocByHealthProDto.class
+    |       |                   |           |       GetTimingDocByHealthProLoad.class
+    |       |                   |           |       GetTimingDocByHealthProMapper.class
+    |       |                   |           |       GetTimingDocByHealthProMapperImpl.class
+    |       |                   |           |       GetTimingDocByHealthProService.class
+    |       |                   |           |       GetTimingDocByHealthProUseCase.class
+    |       |                   |           |       
+    |       |                   |           +---getlistbyspe
+    |       |                   |           |       GetDoctorTimingSpeDto.class
+    |       |                   |           |       GetTimingDoctorSpeLoad.class
+    |       |                   |           |       GetTimingDoctorSpeMapper.class
+    |       |                   |           |       GetTimingDoctorSpeMapperImpl.class
+    |       |                   |           |       GetTimingDoctorSpeService.class
+    |       |                   |           |       GetTimingDoctorSpeUseCase.class
+    |       |                   |           |       
+    |       |                   |           \---getlisting
+    |       |                   |                   GetDoctorTimingDto.class
+    |       |                   |                   GetTimingDoctorLoad.class
+    |       |                   |                   GetTimingDoctorService.class
+    |       |                   |                   GetTimingDoctorUseCase.class
+    |       |                   |                   
+    |       |                   +---communs
+    |       |                   |   +---generators
+    |       |                   |   |       UnitCodeGenerator.class
+    |       |                   |   |       
+    |       |                   |   \---NewNotification
+    |       |                   |       +---CreateNewNotification
+    |       |                   |       |       CreateNewNotification.class
+    |       |                   |       |       CreateNewNotificationDto.class
+    |       |                   |       |       CreateNewNotificationDtoResponse.class
+    |       |                   |       |       CreateNewNotificationDtoResponsePatient.class
+    |       |                   |       |       CreateNewNotificationLoadPatient.class
+    |       |                   |       |       CreateNewNotificationLoadRequestAppointment.class
+    |       |                   |       |       CreateNewNotificationLoadRequestCareCoverage.class
+    |       |                   |       |       CreateNewNotificationMapper.class
+    |       |                   |       |       CreateNewNotificationMapperImpl.class
+    |       |                   |       |       CreateNewNotificationService.class
+    |       |                   |       |       CreateNewNotificationUseCase.class
+    |       |                   |       |       GetMaxNotificationCode.class
+    |       |                   |       |       
+    |       |                   |       +---GetByPatient
+    |       |                   |       |       GetNewNotificationsByPatientCodeDto.class
+    |       |                   |       |       GetNewNotificationsByPatientCodeLoad.class
+    |       |                   |       |       GetNewNotificationsByPatientCodeMapper.class
+    |       |                   |       |       GetNewNotificationsByPatientCodeMapperImpl.class
+    |       |                   |       |       GetNewNotificationsByPatientCodeService.class
+    |       |                   |       |       GetNewNotificationsByPatientCodeUseCase.class
+    |       |                   |       |       
+    |       |                   |       +---GetLatestOne
+    |       |                   |       |       GetLatestNotificationDto.class
+    |       |                   |       |       GetLatestNotificationLoad.class
+    |       |                   |       |       GetLatestNotificationMapper.class
+    |       |                   |       |       GetLatestNotificationMapperImpl.class
+    |       |                   |       |       GetLatestNotificationService.class
+    |       |                   |       |       GetLatestNotificationUseCase.class
+    |       |                   |       |       
+    |       |                   |       +---GetNewNotification
+    |       |                   |       |       GetNewNotificationDto.class
+    |       |                   |       |       GetNewNotificationLoad.class
+    |       |                   |       |       GetNewNotificationMapper.class
+    |       |                   |       |       GetNewNotificationMapperImpl.class
+    |       |                   |       |       GetNewNotificationService.class
+    |       |                   |       |       GetNewNotificationUseCase.class
+    |       |                   |       |       
+    |       |                   |       \---MarkAsSeen
+    |       |                   |               MarkAsSeenDtoResponse.class
+    |       |                   |               MarkAsSeenLoad.class
+    |       |                   |               MarkAsSeenMapper.class
+    |       |                   |               MarkAsSeenMapperImpl.class
+    |       |                   |               MarkAsSeenService.class
+    |       |                   |               MarkAsSeenUseCase.class
+    |       |                   |               UpdateNewNotification.class
+    |       |                   |               
+    |       |                   +---configuration
+    |       |                   |   \---ping
+    |       |                   |           PingCordinator.class
+    |       |                   |           PingCordinatorImpl.class
+    |       |                   |           PingService.class
+    |       |                   |           PingUseCase.class
+    |       |                   |           
+    |       |                   +---notification
+    |       |                   |       NotificationDto$NotificationDtoBuilder.class
+    |       |                   |       NotificationDto.class
+    |       |                   |       SendNotificationPort.class
+    |       |                   |       
+    |       |                   \---reference
+    |       |                       +---agent
+    |       |                       |       AyantDroitParentDto.class
+    |       |                       |       AyantDroitParentLoad.class
+    |       |                       |       AyantDroitParentMapper.class
+    |       |                       |       AyantDroitParentMapperImpl.class
+    |       |                       |       AyantDroitParentService.class
+    |       |                       |       AyantDroitParentUseCase.class
+    |       |                       |       
+    |       |                       +---ayantdroit
+    |       |                       |       AyantDroitByEmployeeNumberDto.class
+    |       |                       |       AyantDroitByEmployeeNumberLoad.class
+    |       |                       |       AyantDroitByEmployeeNumberMapper.class
+    |       |                       |       AyantDroitByEmployeeNumberMapperImpl.class
+    |       |                       |       AyantDroitByEmployeeNumberService.class
+    |       |                       |       AyantDroitByEmployeeNumberUseCase.class
+    |       |                       |       
+    |       |                       +---commune
+    |       |                       |   \---queries
+    |       |                       |       \---getcommunelist
+    |       |                       |               CommuneListDto.class
+    |       |                       |               GetCommuneListMapper.class
+    |       |                       |               GetCommuneListMapperImpl.class
+    |       |                       |               GetCommuneListService.class
+    |       |                       |               GetCommuneListUseCase.class
+    |       |                       |               LoadCommuneList.class
+    |       |                       |               
+    |       |                       +---healthprofessionalmedicalcenter
+    |       |                       |       GetHealthProfessionalMedicalCenterPort.class
+    |       |                       |       GetHealthProfessionalMedicalCenterService.class
+    |       |                       |       GetHealthProfessionalMedicalCenterUseCase.class
+    |       |                       |       HealthProfessionalMedicalCenterDto.class
+    |       |                       |       
+    |       |                       +---patient
+    |       |                       |   \---queries
+    |       |                       |           GetPatientByCodeDtoResponse$GetPatientByCodeDtoResponseBuilder.class
+    |       |                       |           GetPatientByCodeDtoResponse.class
+    |       |                       |           GetPatientByCodeLoad.class
+    |       |                       |           GetPatientByCodeMapper.class
+    |       |                       |           GetPatientByCodeMapperImpl.class
+    |       |                       |           GetPatientByCodeService.class
+    |       |                       |           GetPatientByCodeUseCase.class
+    |       |                       |           GetPatientDto.class
+    |       |                       |           
+    |       |                       +---Provider
+    |       |                       |   +---listing
+    |       |                       |   |       GetProviderDto.class
+    |       |                       |   |       GetProviderLoad.class
+    |       |                       |   |       GetProviderService.class
+    |       |                       |   |       GetProviderUseCase.class
+    |       |                       |   |       
+    |       |                       |   \---providerbycat
+    |       |                       |           GetProviderBySpeDto.class
+    |       |                       |           GetProviderBySpeLoad.class
+    |       |                       |           GetProviderBySpeMapper.class
+    |       |                       |           GetProviderBySpeMapperImpl.class
+    |       |                       |           GetProviderBySpeService.class
+    |       |                       |           GetProviderBySpeUseCase.class
+    |       |                       |           
+    |       |                       +---refcode
+    |       |                       |   +---command
+    |       |                       |   |   +---createrefcode
+    |       |                       |   |   |       CreateRefCode.class
+    |       |                       |   |   |       CreateRefCodeDto.class
+    |       |                       |   |   |       CreateRefCodeDtoResponse.class
+    |       |                       |   |   |       CreateRefCodeLoadRefCodeDomain.class
+    |       |                       |   |   |       CreateRefCodeMapper.class
+    |       |                       |   |   |       CreateRefCodeMapperImpl.class
+    |       |                       |   |   |       CreateRefCodeService.class
+    |       |                       |   |   |       CreateRefCodeUseCase.class
+    |       |                       |   |   |       
+    |       |                       |   |   +---deleterefcode
+    |       |                       |   |   |       DeleteRefCode.class
+    |       |                       |   |   |       DeleteRefCodeService.class
+    |       |                       |   |   |       DeleteRefCodeUseCase.class
+    |       |                       |   |   |       
+    |       |                       |   |   \---updaterefcode
+    |       |                       |   |           UpdateRefCode.class
+    |       |                       |   |           UpdateRefCodeDto.class
+    |       |                       |   |           UpdateRefCodeDtoResponse.class
+    |       |                       |   |           UpdateRefCodeMapper.class
+    |       |                       |   |           UpdateRefCodeMapperImpl.class
+    |       |                       |   |           UpdateRefCodeService.class
+    |       |                       |   |           UpdateRefCodeUseCase.class
+    |       |                       |   |           
+    |       |                       |   \---queries
+    |       |                       |       +---getrefcode
+    |       |                       |       |       GetRefCodeDto.class
+    |       |                       |       |       GetRefCodeLoad.class
+    |       |                       |       |       GetRefCodeMapper.class
+    |       |                       |       |       GetRefCodeMapperImpl.class
+    |       |                       |       |       GetRefCodeService.class
+    |       |                       |       |       GetRefCodeUseCase.class
+    |       |                       |       |       
+    |       |                       |       \---getrefcodelist
+    |       |                       |               GetNomDomain.class
+    |       |                       |               GetRefCodeListDto.class
+    |       |                       |               GetRefCodeListDtoDetails.class
+    |       |                       |               GetRefCodeListLoad.class
+    |       |                       |               GetRefCodeListLoadDomain.class
+    |       |                       |               GetRefCodeListMapper.class
+    |       |                       |               GetRefCodeListMapperImpl.class
+    |       |                       |               GetRefCodeListService.class
+    |       |                       |               GetRefCodeListUseCase.class
+    |       |                       |               
+    |       |                       +---refcodedomain
+    |       |                       |   +---commands
+    |       |                       |   |   +---createrefcodedomain
+    |       |                       |   |   |       CreateRefCodeDomain.class
+    |       |                       |   |   |       CreateRefCodeDomainDto.class
+    |       |                       |   |   |       CreateRefCodeDomainDtoResponse.class
+    |       |                       |   |   |       CreateRefCodeDomainLoad.class
+    |       |                       |   |   |       CreateRefCodeDomainMapper.class
+    |       |                       |   |   |       CreateRefCodeDomainMapperImpl.class
+    |       |                       |   |   |       CreateRefCodeDomainService.class
+    |       |                       |   |   |       CreateRefCodeDomainUseCase.class
+    |       |                       |   |   |       
+    |       |                       |   |   +---deleterefcodedomain
+    |       |                       |   |   |       DeleteRefCodeDomain.class
+    |       |                       |   |   |       DeleteRefCodeDomainService.class
+    |       |                       |   |   |       DeleteRefCodeDomainUseCase.class
+    |       |                       |   |   |       
+    |       |                       |   |   \---updaterefcodedomain
+    |       |                       |   |           UpdateRefCodeDomain.class
+    |       |                       |   |           UpdateRefCodeDomainDto.class
+    |       |                       |   |           UpdateRefCodeDomainDtoResponse.class
+    |       |                       |   |           UpdateRefCodeDomainLoad.class
+    |       |                       |   |           UpdateRefCodeDomainMapper.class
+    |       |                       |   |           UpdateRefCodeDomainMapperImpl.class
+    |       |                       |   |           UpdateRefCodeDomainService.class
+    |       |                       |   |           UpdateRefCodeDomainUseCase.class
+    |       |                       |   |           
+    |       |                       |   \---queries
+    |       |                       |       \---getdomainrefcodelist
+    |       |                       |           \---getdomainrefcodelist
+    |       |                       |                   GetDomainRefCodeListDto.class
+    |       |                       |                   GetDomainRefCodeListLoad.class
+    |       |                       |                   GetDomainRefCodeListMapper.class
+    |       |                       |                   GetDomainRefCodeListMapperImpl.class
+    |       |                       |                   GetDomainRefCodeListService.class
+    |       |                       |                   GetDomainRefCodeListUseCase.class
+    |       |                       |                   
+    |       |                       +---specialty
+    |       |                       |       GetSpecialtyDto.class
+    |       |                       |       GetSpecialtyLoad.class
+    |       |                       |       GetSpecialtyMapper.class
+    |       |                       |       GetSpecialtyMapperImpl.class
+    |       |                       |       GetSpecialtyService.class
+    |       |                       |       GetSpecialtyUseCase.class
+    |       |                       |       
+    |       |                       \---wilaya
+    |       |                           \---queries
+    |       |                               +---getwilaya
+    |       |                               |       GetWilayaMapper.class
+    |       |                               |       GetWilayaMapperImpl.class
+    |       |                               |       GetWilayaService.class
+    |       |                               |       GetWilayaUseCase.class
+    |       |                               |       LoadWilaya.class
+    |       |                               |       WilayaDto.class
+    |       |                               |       
+    |       |                               \---getwilayalist
+    |       |                                       GetWilayaListMapper.class
+    |       |                                       GetWilayaListMapperImpl.class
+    |       |                                       GetWilayaListService.class
+    |       |                                       GetWilayaListUseCase.class
+    |       |                                       LoadWilayaList.class
+    |       |                                       WilayaListDto.class
+    |       |                                       
+    |       \---generated-sources
+    |           \---annotations
+    |               \---dz
+    |                   \---elit
+    |                       \---sihati
+    |                           \---application
+    |                               +---admin
+    |                               |   +---organisationalstructure
+    |                               |   |   \---queries
+    |                               |   |       +---getorgstructure
+    |                               |   |       |       GetOrgStructureMapperImpl.java
+    |                               |   |       |       
+    |                               |   |       +---getorgstructurebyparentalllist
+    |                               |   |       +---getorgstructurebyparentlist
+    |                               |   |       \---getorgstructurelist
+    |                               |   |               GetOrgStructureListMapperImpl.java
+    |                               |   |               
+    |                               |   \---user
+    |                               |       \---queries
+    |                               |           +---getuser
+    |                               |           |       GetUserMapperImpl.java
+    |                               |           |       
+    |                               |           +---getuserbycode
+    |                               |           |       GetUserByCodeMapperImpl.java
+    |                               |           |       
+    |                               |           \---getuserbyemailorusername
+    |                               |                   GetUserByEmailOrUserNameMapperImpl.java
+    |                               |                   
+    |                               +---care
+    |                               |   +---ConstanteVitale
+    |                               |   |   \---queries
+    |                               |   |       \---GetConstanteVitaleByPatientCode
+    |                               |   +---consultation
+    |                               |   |   \---queries
+    |                               |   |       +---getconsultation
+    |                               |   |       |       GetConsultationMapperImpl.java
+    |                               |   |       |       
+    |                               |   |       +---getConsultationByPatientCode
+    |                               |   |       |       GetConsultationByPatientMapperImpl.java
+    |                               |   |       |       
+    |                               |   |       +---getconsultationlist
+    |                               |   |       |       GetConsultationListMapperImpl.java
+    |                               |   |       |       
+    |                               |   |       \---GetLastConsultation
+    |                               |   |               GetLastConsultationMapperImpl.java
+    |                               |   |               
+    |                               |   +---pathologie
+    |                               |   |       GetPathologieMapperImpl.java
+    |                               |   |       
+    |                               |   +---RequestAppointment
+    |                               |   |   +---commands
+    |                               |   |   |   +---CancelRequestAppointment
+    |                               |   |   |   |       CancelRequestAppointmentMapperImpl.java
+    |                               |   |   |   |       
+    |                               |   |   |   +---createrequestappointement
+    |                               |   |   |   |       CreateRequestAppointmentMapperImpl.java
+    |                               |   |   |   |       
+    |                               |   |   |   \---update
+    |                               |   |   |           UpdateRequestAppointmentMapperImpl.java
+    |                               |   |   |           
+    |                               |   |   +---get
+    |                               |   |   |   |   GetRequestAppointmentMapperImpl.java
+    |                               |   |   |   |   
+    |                               |   |   |   \---nearest
+    |                               |   |   |           GetNearestRequestAppointmentMapperImpl.java
+    |                               |   |   |           
+    |                               |   |   \---GetByPatientCode
+    |                               |   |           GetRequestAppointmentByPatientCodeMapperImpl.java
+    |                               |   |           
+    |                               |   +---requestcarecoverage
+    |                               |   |   +---commands
+    |                               |   |   |   +---cancelrequestcarecoverage
+    |                               |   |   |   \---createrequestcarecoverage
+    |                               |   |   \---queries
+    |                               |   |       \---getrequestcarecoverage
+    |                               |   |               GetRequestCareCoverageMapperImpl.java
+    |                               |   |               
+    |                               |   \---TimingDoctor
+    |                               |       \---queries
+    |                               |           +---getbyhealthpro
+    |                               |           |       GetTimingDocByHealthProMapperImpl.java
+    |                               |           |       
+    |                               |           \---getlistbyspe
+    |                               |                   GetTimingDoctorSpeMapperImpl.java
+    |                               |                   
+    |                               +---communs
+    |                               |   \---NewNotification
+    |                               |       +---CreateNewNotification
+    |                               |       |       CreateNewNotificationMapperImpl.java
+    |                               |       |       
+    |                               |       +---GetByPatient
+    |                               |       |       GetNewNotificationsByPatientCodeMapperImpl.java
+    |                               |       |       
+    |                               |       +---GetLatestOne
+    |                               |       |       GetLatestNotificationMapperImpl.java
+    |                               |       |       
+    |                               |       +---GetNewNotification
+    |                               |       |       GetNewNotificationMapperImpl.java
+    |                               |       |       
+    |                               |       \---MarkAsSeen
+    |                               |               MarkAsSeenMapperImpl.java
+    |                               |               
+    |                               \---reference
+    |                                   +---agent
+    |                                   |       AyantDroitParentMapperImpl.java
+    |                                   |       
+    |                                   +---ayantdroit
+    |                                   |       AyantDroitByEmployeeNumberMapperImpl.java
+    |                                   |       
+    |                                   +---commune
+    |                                   |   \---queries
+    |                                   |       \---getcommunelist
+    |                                   |               GetCommuneListMapperImpl.java
+    |                                   |               
+    |                                   +---patient
+    |                                   |   \---queries
+    |                                   |           GetPatientByCodeMapperImpl.java
+    |                                   |           
+    |                                   +---Provider
+    |                                   |   \---providerbycat
+    |                                   |           GetProviderBySpeMapperImpl.java
+    |                                   |           
+    |                                   +---refcode
+    |                                   |   +---command
+    |                                   |   |   +---createrefcode
+    |                                   |   |   |       CreateRefCodeMapperImpl.java
+    |                                   |   |   |       
+    |                                   |   |   \---updaterefcode
+    |                                   |   |           UpdateRefCodeMapperImpl.java
+    |                                   |   |           
+    |                                   |   \---queries
+    |                                   |       +---getrefcode
+    |                                   |       |       GetRefCodeMapperImpl.java
+    |                                   |       |       
+    |                                   |       \---getrefcodelist
+    |                                   |               GetRefCodeListMapperImpl.java
+    |                                   |               
+    |                                   +---refcodedomain
+    |                                   |   +---commands
+    |                                   |   |   +---createrefcodedomain
+    |                                   |   |   |       CreateRefCodeDomainMapperImpl.java
+    |                                   |   |   |       
+    |                                   |   |   \---updaterefcodedomain
+    |                                   |   |           UpdateRefCodeDomainMapperImpl.java
+    |                                   |   |           
+    |                                   |   \---queries
+    |                                   |       \---getdomainrefcodelist
+    |                                   |           \---getdomainrefcodelist
+    |                                   +---specialty
+    |                                   |       GetSpecialtyMapperImpl.java
+    |                                   |       
+    |                                   \---wilaya
+    |                                       \---queries
+    |                                           +---getwilaya
+    |                                           |       GetWilayaMapperImpl.java
+    |                                           |       
+    |                                           \---getwilayalist
+    |                                                   GetWilayaListMapperImpl.java
+    |                                                   
+    +---sihati-system-domain
+    |   |   pom.xml
+    |   |   
+    |   +---src
+    |   |   \---main
+    |   |       \---java
+    |   |           \---dz
+    |   |               \---elit
+    |   |                   \---sihati
+    |   |                       \---domain
+    |   |                           |   package-info.java
+    |   |                           |   
+    |   |                           +---admin
+    |   |                           |       OrganisationalStructure.java
+    |   |                           |       StructureActivity.java
+    |   |                           |       StructureType.java
+    |   |                           |       User.java
+    |   |                           |       
+    |   |                           +---care
+    |   |                           |   |   Agreement.java
+    |   |                           |   |   ConstanteVitale.java
+    |   |                           |   |   Consultation.java
+    |   |                           |   |   HealthRecord.java
+    |   |                           |   |   MedicalDoc.java
+    |   |                           |   |   MedicalReport.java
+    |   |                           |   |   Pathologie.java
+    |   |                           |   |   RequestAppointment.java
+    |   |                           |   |   RequestCareCoverage.java
+    |   |                           |   |   TimingDoctor.java
+    |   |                           |   |   
+    |   |                           |   \---enumeration
+    |   |                           |           AgreementStatus.java
+    |   |                           |           DurationUnit.java
+    |   |                           |           RequestAppointmentStatus.java
+    |   |                           |           RequestCareCoverageStatus.java
+    |   |                           |           Severite.java
+    |   |                           |           StatusCareCoverage.java
+    |   |                           |           TimingDoctorStatus.java
+    |   |                           |           UnitBase.java
+    |   |                           |           WaitingListStatus.java
+    |   |                           |           
+    |   |                           +---commons
+    |   |                           |       Auditing.java
+    |   |                           |       AuditingWithVersion.java
+    |   |                           |       EnumObject.java
+    |   |                           |       FileExtension.java
+    |   |                           |       UserContextDto.java
+    |   |                           |       UserDtoStructureContext.java
+    |   |                           |       Visibility.java
+    |   |                           |       
+    |   |                           +---communication
+    |   |                           |   |   AttachedDocument.java
+    |   |                           |   |   AttachedDocumentType.java
+    |   |                           |   |   AttachmentEntity.java
+    |   |                           |   |   NewNotification.java
+    |   |                           |   |   Notification.java
+    |   |                           |   |   NotificationAction.java
+    |   |                           |   |   NotificationLevel.java
+    |   |                           |   |   
+    |   |                           |   \---enumeration
+    |   |                           |           NotificationType.java
+    |   |                           |           
+    |   |                           +---exceptions
+    |   |                           |       ActionNotAllowedException.java
+    |   |                           |       CookieMessageException.java
+    |   |                           |       FileNotFoundException.java
+    |   |                           |       FileStorageException.java
+    |   |                           |       NotAllowedAffectationException.java
+    |   |                           |       ResourceAlreadyExistException.java
+    |   |                           |       ResourceNotFoundException.java
+    |   |                           |       TokenNotRefreshableException.java
+    |   |                           |       UserNotAuthorizedException.java
+    |   |                           |       WrongFormatException.java
+    |   |                           |       
+    |   |                           \---reference
+    |   |                               |   Beneficiary.java
+    |   |                               |   Commune.java
+    |   |                               |   Employee.java
+    |   |                               |   HealthProfessional.java
+    |   |                               |   HealthProfessionalMedicalCenter.java
+    |   |                               |   HealthProfessionalMedicalCenterId.java
+    |   |                               |   MedicalActCategory.java
+    |   |                               |   Patient.java
+    |   |                               |   Provider.java
+    |   |                               |   RefCode.java
+    |   |                               |   RefCodeDomain.java
+    |   |                               |   Specialty.java
+    |   |                               |   Wilaya.java
+    |   |                               |   
+    |   |                               \---enumeration
+    |   |                                       BeneficiaryRelation.java
+    |   |                                       EmploymentStatus.java
+    |   |                                       FamilySituation.java
+    |   |                                       PatientCategory.java
+    |   |                                       PatientInternalType.java
+    |   |                                       ProviderCategory.java
+    |   |                                       
+    |   \---target
+    |       +---classes
+    |       |   \---dz
+    |       |       \---elit
+    |       |           \---sihati
+    |       |               \---domain
+    |       |                   +---admin
+    |       |                   |       OrganisationalStructure$OrganisationalStructureBuilder.class
+    |       |                   |       OrganisationalStructure$OrganisationalStructureBuilderImpl.class
+    |       |                   |       OrganisationalStructure.class
+    |       |                   |       StructureActivity.class
+    |       |                   |       StructureType.class
+    |       |                   |       User$UserBuilder.class
+    |       |                   |       User$UserBuilderImpl.class
+    |       |                   |       User.class
+    |       |                   |       
+    |       |                   +---care
+    |       |                   |   |   Agreement$AgreementBuilder.class
+    |       |                   |   |   Agreement.class
+    |       |                   |   |   ConstanteVitale.class
+    |       |                   |   |   Consultation$ConsultationBuilder.class
+    |       |                   |   |   Consultation.class
+    |       |                   |   |   MedicalDoc$MedicalDocBuilder.class
+    |       |                   |   |   MedicalDoc.class
+    |       |                   |   |   MedicalReport.class
+    |       |                   |   |   Pathologie$PathologieBuilder.class
+    |       |                   |   |   Pathologie.class
+    |       |                   |   |   RequestAppointment$RequestAppointmentBuilder.class
+    |       |                   |   |   RequestAppointment.class
+    |       |                   |   |   RequestCareCoverage$RequestCareCoverageBuilder.class
+    |       |                   |   |   RequestCareCoverage.class
+    |       |                   |   |   TimingDoctor$TimingDoctorBuilder.class
+    |       |                   |   |   TimingDoctor.class
+    |       |                   |   |   
+    |       |                   |   \---enumeration
+    |       |                   |           AgreementStatus.class
+    |       |                   |           DurationUnit.class
+    |       |                   |           RequestAppointmentStatus.class
+    |       |                   |           RequestCareCoverageStatus.class
+    |       |                   |           Severite.class
+    |       |                   |           StatusCareCoverage.class
+    |       |                   |           TimingDoctorStatus.class
+    |       |                   |           UnitBase.class
+    |       |                   |           WaitingListStatus.class
+    |       |                   |           
+    |       |                   +---commons
+    |       |                   |       Auditing$AuditingBuilder.class
+    |       |                   |       Auditing.class
+    |       |                   |       AuditingWithVersion$AuditingWithVersionBuilder.class
+    |       |                   |       AuditingWithVersion.class
+    |       |                   |       EnumObject.class
+    |       |                   |       FileExtension.class
+    |       |                   |       UserContextDto.class
+    |       |                   |       UserDtoStructureContext.class
+    |       |                   |       Visibility$VisibilityBuilder.class
+    |       |                   |       Visibility.class
+    |       |                   |       
+    |       |                   +---communication
+    |       |                   |   |   AttachedDocument$AttachedDocumentBuilder.class
+    |       |                   |   |   AttachedDocument.class
+    |       |                   |   |   AttachedDocumentType.class
+    |       |                   |   |   AttachmentEntity.class
+    |       |                   |   |   NewNotification$NewNotificationBuilder.class
+    |       |                   |   |   NewNotification.class
+    |       |                   |   |   Notification$NotificationBuilder.class
+    |       |                   |   |   Notification.class
+    |       |                   |   |   NotificationAction.class
+    |       |                   |   |   NotificationLevel.class
+    |       |                   |   |   
+    |       |                   |   \---enumeration
+    |       |                   |           NotificationType.class
+    |       |                   |           
+    |       |                   +---exceptions
+    |       |                   |       ActionNotAllowedException.class
+    |       |                   |       CookieMessageException.class
+    |       |                   |       FileNotFoundException.class
+    |       |                   |       FileStorageException.class
+    |       |                   |       NotAllowedAffectationException.class
+    |       |                   |       ResourceAlreadyExistException.class
+    |       |                   |       ResourceNotFoundException.class
+    |       |                   |       TokenNotRefreshableException.class
+    |       |                   |       UserNotAuthorizedException.class
+    |       |                   |       WrongFormatException.class
+    |       |                   |       
+    |       |                   \---reference
+    |       |                       |   Beneficiary$BeneficiaryBuilder.class
+    |       |                       |   Beneficiary.class
+    |       |                       |   Commune$CommuneBuilder.class
+    |       |                       |   Commune.class
+    |       |                       |   Employee$EmployeeBuilder.class
+    |       |                       |   Employee.class
+    |       |                       |   HealthProfessional$HealthProfessionalBuilder.class
+    |       |                       |   HealthProfessional$HealthProfessionalBuilderImpl.class
+    |       |                       |   HealthProfessional.class
+    |       |                       |   HealthProfessionalMedicalCenter$HealthProfessionalMedicalCenterBuilder.class
+    |       |                       |   HealthProfessionalMedicalCenter$HealthProfessionalMedicalCenterBuilderImpl.class
+    |       |                       |   HealthProfessionalMedicalCenter.class
+    |       |                       |   HealthProfessionalMedicalCenterId$HealthProfessionalMedicalCenterIdBuilder.class
+    |       |                       |   HealthProfessionalMedicalCenterId$HealthProfessionalMedicalCenterIdBuilderImpl.class
+    |       |                       |   HealthProfessionalMedicalCenterId.class
+    |       |                       |   MedicalActCategory$MedicalActCategoryBuilder.class
+    |       |                       |   MedicalActCategory.class
+    |       |                       |   Patient$PatientBuilder.class
+    |       |                       |   Patient$PatientBuilderImpl.class
+    |       |                       |   Patient.class
+    |       |                       |   Provider$ProviderBuilder.class
+    |       |                       |   Provider.class
+    |       |                       |   RefCode.class
+    |       |                       |   RefCodeDomain.class
+    |       |                       |   Specialty$SpecialtyBuilder.class
+    |       |                       |   Specialty.class
+    |       |                       |   Wilaya$WilayaBuilder.class
+    |       |                       |   Wilaya.class
+    |       |                       |   
+    |       |                       \---enumeration
+    |       |                               BeneficiaryRelation.class
+    |       |                               EmploymentStatus.class
+    |       |                               FamilySituation.class
+    |       |                               PatientCategory.class
+    |       |                               PatientInternalType.class
+    |       |                               ProviderCategory.class
+    |       |                               
+    |       \---generated-sources
+    |           \---annotations
+    +---sihati-system-infrastructure
+    |   |   pom.xml
+    |   |   
+    |   +---src
+    |   |   \---main
+    |   |       +---java
+    |   |       |   \---dz
+    |   |       |       \---elit
+    |   |       |           \---sihati
+    |   |       |               +---commons
+    |   |       |               \---infrastructure
+    |   |       |                   +---enumration
+    |   |       |                   |       ReportExportType.java
+    |   |       |                   |       
+    |   |       |                   +---jasper
+    |   |       |                   |   |   JasperCareCoverageReportGenerator.java
+    |   |       |                   |   |   
+    |   |       |                   |   +---config
+    |   |       |                   |   |   |   MessageConfig.java
+    |   |       |                   |   |   |   
+    |   |       |                   |   |   \---jasperreports
+    |   |       |                   |   |           PdfExportConfig.java
+    |   |       |                   |   |           PdfReportConfig.java
+    |   |       |                   |   |           
+    |   |       |                   |   \---utils
+    |   |       |                   |       \---processor
+    |   |       |                   |               BeanFactoryDynamicAutowireService.java
+    |   |       |                   |               CsvOutputProcessor.java
+    |   |       |                   |               DynamicOutputProcessorService.java
+    |   |       |                   |               HtmlOutputProcessor.java
+    |   |       |                   |               OutputProcessor.java
+    |   |       |                   |               PdfOutputProcessor.java
+    |   |       |                   |               XlsOutputProcessor.java
+    |   |       |                   |               
+    |   |       |                   \---notification
+    |   |       |                           NotificationClient.java
+    |   |       |                           RestTemplateConfig.java
+    |   |       |                           
+    |   |       \---resources
+    |   |           \---reports
+    |   |                   care_coverage.jrxml
+    |   |                   logo.png
+    |   |                   
+    |   \---target
+    |       +---classes
+    |       |   +---dz
+    |       |   |   \---elit
+    |       |   |       \---sihati
+    |       |   |           \---infrastructure
+    |       |   |               +---enumration
+    |       |   |               |       ReportExportType.class
+    |       |   |               |       
+    |       |   |               +---jasper
+    |       |   |               |   |   JasperCareCoverageReportGenerator.class
+    |       |   |               |   |   
+    |       |   |               |   +---config
+    |       |   |               |   |   |   MessageConfig.class
+    |       |   |               |   |   |   
+    |       |   |               |   |   \---jasperreports
+    |       |   |               |   |           PdfExportConfig.class
+    |       |   |               |   |           PdfReportConfig.class
+    |       |   |               |   |           
+    |       |   |               |   \---utils
+    |       |   |               |       \---processor
+    |       |   |               |               BeanFactoryDynamicAutowireService.class
+    |       |   |               |               CsvOutputProcessor.class
+    |       |   |               |               DynamicOutputProcessorService.class
+    |       |   |               |               HtmlOutputProcessor.class
+    |       |   |               |               OutputProcessor.class
+    |       |   |               |               PdfOutputProcessor.class
+    |       |   |               |               XlsOutputProcessor.class
+    |       |   |               |               
+    |       |   |               \---notification
+    |       |   |                       NotificationClient.class
+    |       |   |                       RestTemplateConfig$1.class
+    |       |   |                       RestTemplateConfig.class
+    |       |   |                       
+    |       |   \---reports
+    |       |           care_coverage.jrxml
+    |       |           logo.png
+    |       |           
+    |       \---generated-sources
+    |           \---annotations
+    +---sihati-system-persistence
+    |   |   pom.xml
+    |   |   sihati-system-persistence.iml
+    |   |   
+    |   +---src
+    |   |   \---main
+    |   |       \---java
+    |   |           \---dz
+    |   |               \---elit
+    |   |                   \---sihati
+    |   |                       \---persistence
+    |   |                           +---admin
+    |   |                           |   +---organisationalstructure
+    |   |                           |   |       OrganisationalStructurePersistenceAdapter.java
+    |   |                           |   |       OrganisationalStructureRepository.java
+    |   |                           |   |       
+    |   |                           |   \---user
+    |   |                           |           UserPersistenceAdapter.java
+    |   |                           |           UserRepository.java
+    |   |                           |           
+    |   |                           +---care
+    |   |                           |   +---ConstanteVitale
+    |   |                           |   |       ConstanteVitalePersistenceAdapter.java
+    |   |                           |   |       ConstanteVitaleRepository.java
+    |   |                           |   |       
+    |   |                           |   +---consultation
+    |   |                           |   |       ConsultationPersistenceAdapter.java
+    |   |                           |   |       ConsultationRepository.java
+    |   |                           |   |       
+    |   |                           |   +---dashboard
+    |   |                           |   |       AppointmentStatsRepository.java
+    |   |                           |   |       CareCoverageStatsRepository.java
+    |   |                           |   |       ConstanteVitaleStatsRepository.java
+    |   |                           |   |       DashboardStatsPersistenceAdapter.java
+    |   |                           |   |       dashConstanteVitalePersistenceAdapter.java
+    |   |                           |   |       
+    |   |                           |   +---medicaldoc
+    |   |                           |   |       FileSystemStorageAdapter.java
+    |   |                           |   |       LoadCareCoverageByCodeAdapter.java
+    |   |                           |   |       MedicalDocRepository.java
+    |   |                           |   |       SaveMedicalDocAdapter.java
+    |   |                           |   |       
+    |   |                           |   +---MedReportDownload
+    |   |                           |   |       MedReportDownloadPersistenceAdapter.java
+    |   |                           |   |       MedReportDownloadRepository.java
+    |   |                           |   |       
+    |   |                           |   +---pathologie
+    |   |                           |   |       GetPathologiePersistanceAdapter.java
+    |   |                           |   |       GetPathologieRepository.java
+    |   |                           |   |       
+    |   |                           |   +---requestappointment
+    |   |                           |   |       RequestAppointmentPersistenceAdapter.java
+    |   |                           |   |       RequestAppointmentRepository.java
+    |   |                           |   |       
+    |   |                           |   +---requestcarecoverage
+    |   |                           |   |       DownloadCareCoverageLoadCoverageImpl.java
+    |   |                           |   |       RequestCareCoveragePersistenceAdapter.java
+    |   |                           |   |       RequestCareCoverageRepository.java
+    |   |                           |   |       
+    |   |                           |   \---timingdoctor
+    |   |                           |           TimingDoctorPersistenceAdapter.java
+    |   |                           |           TimingDoctorRepository.java
+    |   |                           |           
+    |   |                           +---NewNotification
+    |   |                           |       NewNotificationPersistenceAdapter.java
+    |   |                           |       NewNotificationRepository.java
+    |   |                           |       
+    |   |                           \---reference
+    |   |                               +---AyantDroit
+    |   |                               |       AyantDroitAdapter.java
+    |   |                               |       AyantDroitRepository.java
+    |   |                               |       
+    |   |                               +---commune
+    |   |                               |       CommunePersistenceAdapter.java
+    |   |                               |       CommuneRepository.java
+    |   |                               |       
+    |   |                               +---healthprofessionalmedicalcenter
+    |   |                               |       HealthProfessionalMedicalCenterPersistenceAdapter.java
+    |   |                               |       HealthProfessionalMedicalCenterRepository.java
+    |   |                               |       
+    |   |                               +---patient
+    |   |                               |       PatientPersistenceAdapter.java
+    |   |                               |       PatientRepository.java
+    |   |                               |       
+    |   |                               +---Provider
+    |   |                               |       ProviderPersistanceAdapter.java
+    |   |                               |       ProviderRepository.java
+    |   |                               |       
+    |   |                               +---refcode
+    |   |                               |       RefCodePersistenceAdapter.java
+    |   |                               |       RefCodeRepository.java
+    |   |                               |       
+    |   |                               +---refcodedomain
+    |   |                               |       RefCodeDomainPersistenceAdapter.java
+    |   |                               |       RefCodeDomainRepository.java
+    |   |                               |       
+    |   |                               +---specialty
+    |   |                               |       SpecialtyPersistenceAdapter.java
+    |   |                               |       SpecialtyRepository.java
+    |   |                               |       
+    |   |                               \---wilaya
+    |   |                                       WilayaPersistenceAdapter.java
+    |   |                                       WilayaRepository.java
+    |   |                                       
+    |   \---target
+    |       +---classes
+    |       |   \---dz
+    |       |       \---elit
+    |       |           \---sihati
+    |       |               \---persistence
+    |       |                   +---admin
+    |       |                   |   +---organisationalstructure
+    |       |                   |   |       OrganisationalStructurePersistenceAdapter.class
+    |       |                   |   |       OrganisationalStructureRepository.class
+    |       |                   |   |       
+    |       |                   |   \---user
+    |       |                   |           UserPersistenceAdapter.class
+    |       |                   |           UserRepository.class
+    |       |                   |           
+    |       |                   +---care
+    |       |                   |   +---ConstanteVitale
+    |       |                   |   |       ConstanteVitalePersistenceAdapter.class
+    |       |                   |   |       ConstanteVitaleRepository.class
+    |       |                   |   |       
+    |       |                   |   +---consultation
+    |       |                   |   |       ConsultationPersistenceAdapter.class
+    |       |                   |   |       ConsultationRepository.class
+    |       |                   |   |       
+    |       |                   |   +---dashboard
+    |       |                   |   |       AppointmentStatsRepository.class
+    |       |                   |   |       CareCoverageStatsRepository.class
+    |       |                   |   |       ConstanteVitaleStatsRepository.class
+    |       |                   |   |       DashboardStatsPersistenceAdapter.class
+    |       |                   |   |       dashConstanteVitalePersistenceAdapter.class
+    |       |                   |   |       
+    |       |                   |   +---medicaldoc
+    |       |                   |   |       FileSystemStorageAdapter.class
+    |       |                   |   |       LoadCareCoverageByCodeAdapter.class
+    |       |                   |   |       MedicalDocRepository.class
+    |       |                   |   |       SaveMedicalDocAdapter.class
+    |       |                   |   |       
+    |       |                   |   +---MedReportDownload
+    |       |                   |   |       MedReportDownloadPersistenceAdapter.class
+    |       |                   |   |       MedReportDownloadRepository.class
+    |       |                   |   |       
+    |       |                   |   +---pathologie
+    |       |                   |   |       GetPathologiePersistanceAdapter.class
+    |       |                   |   |       GetPathologieRepository.class
+    |       |                   |   |       
+    |       |                   |   +---requestappointment
+    |       |                   |   |       RequestAppointmentPersistenceAdapter.class
+    |       |                   |   |       RequestAppointmentRepository.class
+    |       |                   |   |       
+    |       |                   |   +---requestcarecoverage
+    |       |                   |   |       DownloadCareCoverageLoadCoverageImpl.class
+    |       |                   |   |       RequestCareCoveragePersistenceAdapter.class
+    |       |                   |   |       RequestCareCoverageRepository.class
+    |       |                   |   |       
+    |       |                   |   \---timingdoctor
+    |       |                   |           TimingDoctorPersistenceAdapter.class
+    |       |                   |           TimingDoctorRepository.class
+    |       |                   |           
+    |       |                   +---NewNotification
+    |       |                   |       NewNotificationPersistenceAdapter.class
+    |       |                   |       NewNotificationRepository.class
+    |       |                   |       
+    |       |                   \---reference
+    |       |                       +---AyantDroit
+    |       |                       |       AyantDroitAdapter.class
+    |       |                       |       AyantDroitRepository.class
+    |       |                       |       
+    |       |                       +---commune
+    |       |                       |       CommunePersistenceAdapter.class
+    |       |                       |       CommuneRepository.class
+    |       |                       |       
+    |       |                       +---healthprofessionalmedicalcenter
+    |       |                       |       HealthProfessionalMedicalCenterPersistenceAdapter.class
+    |       |                       |       HealthProfessionalMedicalCenterRepository.class
+    |       |                       |       
+    |       |                       +---patient
+    |       |                       |       PatientPersistenceAdapter.class
+    |       |                       |       PatientRepository.class
+    |       |                       |       
+    |       |                       +---Provider
+    |       |                       |       ProviderPersistanceAdapter.class
+    |       |                       |       ProviderRepository.class
+    |       |                       |       
+    |       |                       +---refcode
+    |       |                       |       RefCodePersistenceAdapter.class
+    |       |                       |       RefCodeRepository.class
+    |       |                       |       
+    |       |                       +---refcodedomain
+    |       |                       |       RefCodeDomainPersistenceAdapter.class
+    |       |                       |       RefCodeDomainRepository.class
+    |       |                       |       
+    |       |                       +---specialty
+    |       |                       |       SpecialtyPersistenceAdapter.class
+    |       |                       |       SpecialtyRepository.class
+    |       |                       |       
+    |       |                       \---wilaya
+    |       |                               WilayaPersistenceAdapter.class
+    |       |                               WilayaRepository.class
+    |       |                               
+    |       \---generated-sources
+    |           \---annotations
+    +---sihati-system-utils
+    |   |   pom.xml
+    |   |   
+    |   +---src
+    |   |   \---main
+    |   |       \---java
+    |   |           \---dz
+    |   |               \---elit
+    |   |                   \---sihati
+    |   |                       +---commons
+    |   |                       |       InfrastructureAdapter.java
+    |   |                       |       PersistenceAdapter.java
+    |   |                       |       UseCase.java
+    |   |                       |       UseCaseExecutor.java
+    |   |                       |       UseCaseExecutorImpl.java
+    |   |                       |       Visibility.java
+    |   |                       |       WebAdapter.java
+    |   |                       |       
+    |   |                       \---utils
+    |   |                           +---captcha
+    |   |                           |       CaptchaUtil.java
+    |   |                           |       
+    |   |                           +---date
+    |   |                           |       DateIsoComponent.java
+    |   |                           |       DateIsoComponentImpl.java
+    |   |                           |       
+    |   |                           +---logger
+    |   |                           |       LoggerConfigurator.java
+    |   |                           |       
+    |   |                           +---redis
+    |   |                           |       RedisUtils.java
+    |   |                           |       
+    |   |                           \---user
+    |   |                                   EmailValidator.java
+    |   |                                   NameValidator.java
+    |   |                                   PhoneValidator.java
+    |   |                                   UserUtilsComponent.java
+    |   |                                   UserUtilsComponentImpl.java
+    |   |                                   ValidEmail.java
+    |   |                                   ValidName.java
+    |   |                                   ValidPhone.java
+    |   |                                   
+    |   \---target
+    |       +---classes
+    |       |   \---dz
+    |       |       \---elit
+    |       |           \---sihati
+    |       |               +---commons
+    |       |               |       InfrastructureAdapter.class
+    |       |               |       PersistenceAdapter.class
+    |       |               |       UseCase$InputValues.class
+    |       |               |       UseCase$OutputValues.class
+    |       |               |       UseCase.class
+    |       |               |       UseCaseExecutor.class
+    |       |               |       UseCaseExecutorImpl.class
+    |       |               |       Visibility.class
+    |       |               |       WebAdapter.class
+    |       |               |       
+    |       |               \---utils
+    |       |                   +---captcha
+    |       |                   |       CaptchaUtil.class
+    |       |                   |       
+    |       |                   +---date
+    |       |                   |       DateIsoComponent.class
+    |       |                   |       DateIsoComponentImpl.class
+    |       |                   |       
+    |       |                   +---logger
+    |       |                   |       LoggerConfigurator.class
+    |       |                   |       
+    |       |                   +---redis
+    |       |                   |       RedisUtils.class
+    |       |                   |       
+    |       |                   \---user
+    |       |                           EmailValidator.class
+    |       |                           NameValidator.class
+    |       |                           PhoneValidator.class
+    |       |                           UserUtilsComponent.class
+    |       |                           UserUtilsComponentImpl.class
+    |       |                           ValidEmail.class
+    |       |                           ValidName.class
+    |       |                           ValidPhone.class
+    |       |                           
+    |       \---generated-sources
+    |           \---annotations
+    +---sihati-system-web
+    |   |   Dockerfile
+    |   |   pom.xml
+    |   |   
+    |   +---src
+    |   |   \---main
+    |   |       +---java
+    |   |       |   \---dz
+    |   |       |       \---elit
+    |   |       |           \---sihati
+    |   |       |               \---web
+    |   |       |                   |   HomeController.java
+    |   |       |                   |   package-info.java
+    |   |       |                   |   ServletInitializer.java
+    |   |       |                   |   TestApplication.java
+    |   |       |                   |   WebApplication.java
+    |   |       |                   |   
+    |   |       |                   +---admin
+    |   |       |                   |   +---organisationalstructure
+    |   |       |                   |   |   \---dto
+    |   |       |                   |   |           CenterCreateDto.java
+    |   |       |                   |   |           CenterDto.java
+    |   |       |                   |   |           CenterShowDto.java
+    |   |       |                   |   |           UnitDto.java
+    |   |       |                   |   |           UnitEditDto.java
+    |   |       |                   |   |           UserDto.java
+    |   |       |                   |   |           ZoneCreateDto.java
+    |   |       |                   |   |           ZoneDto.java
+    |   |       |                   |   |           ZoneShowDto.java
+    |   |       |                   |   |           
+    |   |       |                   |   \---user
+    |   |       |                   |       |   UserController.java
+    |   |       |                   |       |   UserResource.java
+    |   |       |                   |       |   
+    |   |       |                   |       +---dto
+    |   |       |                   |       |       AuthorityDto.java
+    |   |       |                   |       |       OrganisationalStructureUserDto.java
+    |   |       |                   |       |       RoleDto.java
+    |   |       |                   |       |       RoleNoAuthDto.java
+    |   |       |                   |       |       RoleShowDto.java
+    |   |       |                   |       |       StructureDto.java
+    |   |       |                   |       |       StructureTokenDto.java
+    |   |       |                   |       |       UserAddDto.java
+    |   |       |                   |       |       UserDto.java
+    |   |       |                   |       |       UserListDto.java
+    |   |       |                   |       |       UserUpdatePasswordDto.java
+    |   |       |                   |       |       
+    |   |       |                   |       \---mapper
+    |   |       |                   |               OrganisationalStructureDtoMapper.java
+    |   |       |                   |               
+    |   |       |                   +---apidocumentation
+    |   |       |                   |       SwaggerConfig.java
+    |   |       |                   |       
+    |   |       |                   +---audit
+    |   |       |                   |       AuditConfig.java
+    |   |       |                   |       
+    |   |       |                   +---care
+    |   |       |                   |   +---ConstanteVitale
+    |   |       |                   |   |       ConstanteVitaleController.java
+    |   |       |                   |   |       ConstanteVitaleResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---consultation
+    |   |       |                   |   |       ConsultationController.java
+    |   |       |                   |   |       ConsultationResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---dashboard
+    |   |       |                   |   |       DashboardController.java
+    |   |       |                   |   |       DashboardResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---medicaldoc
+    |   |       |                   |   |       MedicalDocController.java
+    |   |       |                   |   |       MedicalDocResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---MedReportDownLoad
+    |   |       |                   |   |       MedReportDownloadController.java
+    |   |       |                   |   |       MedReportDownloadResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---pathologie
+    |   |       |                   |   |       GetPathologieController.java
+    |   |       |                   |   |       GetPathologieResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---requestappointment
+    |   |       |                   |   |       RequestAppointmentController.java
+    |   |       |                   |   |       RequestAppointmentResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---requestcarecoverage
+    |   |       |                   |   |       RequestCareCoverageController.java
+    |   |       |                   |   |       RequestCareCoverageResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   \---timingdoctor
+    |   |       |                   |           TimingDoctorController.java
+    |   |       |                   |           TimingDoctorResource.java
+    |   |       |                   |           
+    |   |       |                   +---commons
+    |   |       |                   |   +---apierrors
+    |   |       |                   |   |       ApiError.java
+    |   |       |                   |   |       ApiSubError.java
+    |   |       |                   |   |       ApiValidationError.java
+    |   |       |                   |   |       CustomAccessDeniedHandler.java
+    |   |       |                   |   |       RestExceptionHandler.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---controller
+    |   |       |                   |   |       BaseController.java
+    |   |       |                   |   |       
+    |   |       |                   |   \---enums
+    |   |       |                   |       +---controller
+    |   |       |                   |       |       EnumsController.java
+    |   |       |                   |       |       
+    |   |       |                   |       +---dto
+    |   |       |                   |       |       EnumDto.java
+    |   |       |                   |       |       
+    |   |       |                   |       \---mapper
+    |   |       |                   |               EnumsMapper.java
+    |   |       |                   |               
+    |   |       |                   +---configuration
+    |   |       |                   |   |   ConfigurationController.java
+    |   |       |                   |   |   ConfigurationRessource.java
+    |   |       |                   |   |   
+    |   |       |                   |   +---internationalization
+    |   |       |                   |   |       Internationalization.java
+    |   |       |                   |   |       
+    |   |       |                   |   \---task
+    |   |       |                   |           TaskConfig.java
+    |   |       |                   |           TaskScriptData.java
+    |   |       |                   |           
+    |   |       |                   +---NewNotification
+    |   |       |                   |       NewNotificationController.java
+    |   |       |                   |       NewNotificationResource.java
+    |   |       |                   |       
+    |   |       |                   +---notification
+    |   |       |                   |   |   NotificationWebSocketHandler.java
+    |   |       |                   |   |   
+    |   |       |                   |   +---config
+    |   |       |                   |   |       WebSocketConfig.java
+    |   |       |                   |   |       
+    |   |       |                   |   \---domain
+    |   |       |                   |           Notification.java
+    |   |       |                   |           
+    |   |       |                   +---reference
+    |   |       |                   |   +---AyantDroit
+    |   |       |                   |   |       AyantDroitController.java
+    |   |       |                   |   |       AyantDroitResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---commune
+    |   |       |                   |   |       CommuneController.java
+    |   |       |                   |   |       CommuneResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---healthprofessionalmedicalcenter
+    |   |       |                   |   |       HealthProfessionalMedicalCenterController.java
+    |   |       |                   |   |       HealthProfessionalMedicalCenterResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---patient
+    |   |       |                   |   |       PatientController.java
+    |   |       |                   |   |       PatientResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---Provider
+    |   |       |                   |   |       ProviderController.java
+    |   |       |                   |   |       ProviderResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---refcode
+    |   |       |                   |   |       RefCodeController.java
+    |   |       |                   |   |       RefCodeResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---refcodedomain
+    |   |       |                   |   |       RefCodeDomainController.java
+    |   |       |                   |   |       RefCodeDomainResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---specialty
+    |   |       |                   |   |       SpecialtyController.java
+    |   |       |                   |   |       SpecialtyResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   \---wilaya
+    |   |       |                   |           WilayaController.java
+    |   |       |                   |           WilayaResource.java
+    |   |       |                   |           
+    |   |       |                   +---reporting
+    |   |       |                   +---security
+    |   |       |                   |   +---auth
+    |   |       |                   |   |       AuthenticationFailureListener.java
+    |   |       |                   |   |       JwtAuthenticationRequest.java
+    |   |       |                   |   |       LoginAttemptService.java
+    |   |       |                   |   |       RestAuthenticationEntryPoint.java
+    |   |       |                   |   |       TokenAuthenticationFilter.java
+    |   |       |                   |   |       TokenBasedAuthentication.java
+    |   |       |                   |   |       TokenHelper.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---config
+    |   |       |                   |   |       AngularWebConfig.java
+    |   |       |                   |   |       CorsConfig.java
+    |   |       |                   |   |       RestConfig.java
+    |   |       |                   |   |       SecurityProperties.java
+    |   |       |                   |   |       UserDetailsServiceImpl.java
+    |   |       |                   |   |       WebConfig.java
+    |   |       |                   |   |       WebSecurityConfig.java
+    |   |       |                   |   |       
+    |   |       |                   |   +---controller
+    |   |       |                   |   |       AuthenticationController.java
+    |   |       |                   |   |       AuthenticationResource.java
+    |   |       |                   |   |       
+    |   |       |                   |   \---dto
+    |   |       |                   |           PasswordChangerDto.java
+    |   |       |                   |           UserCaptcha.java
+    |   |       |                   |           UserCaptchaUnlock.java
+    |   |       |                   |           UserTokenState.java
+    |   |       |                   |           
+    |   |       |                   \---utils
+    |   |       |                           SecurityUtils.java
+    |   |       |                           
+    |   |       \---resources
+    |   |           |   application-dev.properties
+    |   |           |   application-prod.properties
+    |   |           |   application-test.properties
+    |   |           |   application.properties
+    |   |           |   banner.txt
+    |   |           |   persistence.xml
+    |   |           |   spring.quartz.properties
+    |   |           |   
+    |   |           +---db
+    |   |           |   \---migration
+    |   |           |           V1.0.0__init_db_table.sql
+    |   |           |           V1.1.0__init_db_view.sql
+    |   |           |           V1.2.0__init_db_data.sql
+    |   |           |           V1.3.0__init_db_insert_data.sql
+    |   |           |           V1.3.10__init_db_insertpatho.sql
+    |   |           |           V1.3.11__init_db_insertpatho.sql
+    |   |           |           V1.3.12__int_db_newdoctor.sql
+    |   |           |           V1.3.13__int_db_newtimingdoc.sql
+    |   |           |           V1.3.14__adduser_db_table.sql
+    |   |           |           V1.3.4__init_db_insert_doc.sql
+    |   |           |           V1.3.5__init_db_insert_2doc.sql
+    |   |           |           V1.3.6__init_db_update_doc.sql
+    |   |           |           V1.3.7__init_db_NotifTable.sql
+    |   |           |           V1.3.8__init_db_patho.sql
+    |   |           |           V1.3.9__init_db_patho.sql
+    |   |           |           V1.4.0__int_db_providerfill.sql
+    |   |           |           V1.4.1__init_db_appoitment.sql
+    |   |           |           V1.4.3__add_creation_date_to_newnotification.sql
+    |   |           |           V1.4.4__employee.sql
+    |   |           |           V1.5.0__init_db_moredocs.sql
+    |   |           |           V1.5.1__init_db_moretimingdoc.sql
+    |   |           |           V1.5.2__init_db_appoitementmore.sql
+    |   |           |           V1.5.3__init_db_constantevitale.sql
+    |   |           |           V1.5.4__init_db_consulation.sql
+    |   |           |           V1_5_5__fix_sequences.sql
+    |   |           |           
+    |   |           \---static
+    |   |               +---images
+    |   |               |       logo.png
+    |   |               |       
+    |   |               \---templates
+    |   |                       report1.jasper
+    |   |                       report1.jrxml
+    |   |                       
+    |   \---target
+    |       +---classes
+    |       |   |   application-dev.properties
+    |       |   |   application-prod.properties
+    |       |   |   application-test.properties
+    |       |   |   application.properties
+    |       |   |   banner.txt
+    |       |   |   persistence.xml
+    |       |   |   spring.quartz.properties
+    |       |   |   
+    |       |   +---db
+    |       |   |   \---migration
+    |       |   |           V1.0.0__init_db_table.sql
+    |       |   |           V1.1.0__init_db_view.sql
+    |       |   |           V1.2.0__init_db_data.sql
+    |       |   |           V1.3.0__init_db_insert_data.sql
+    |       |   |           V1.3.10__init_db_insertpatho.sql
+    |       |   |           V1.3.11__init_db_insertpatho.sql
+    |       |   |           V1.3.12__int_db_newdoctor.sql
+    |       |   |           V1.3.13__int_db_newtimingdoc.sql
+    |       |   |           V1.3.14__adduser_db_table.sql
+    |       |   |           V1.3.4__init_db_insert_doc.sql
+    |       |   |           V1.3.5__init_db_insert_2doc.sql
+    |       |   |           V1.3.6__init_db_update_doc.sql
+    |       |   |           V1.3.7__init_db_NotifTable.sql
+    |       |   |           V1.3.8__init_db_patho.sql
+    |       |   |           V1.3.9__init_db_patho.sql
+    |       |   |           V1.4.0__int_db_providerfill.sql
+    |       |   |           V1.4.1__init_db_appoitment.sql
+    |       |   |           V1.4.3__add_creation_date_to_newnotification.sql
+    |       |   |           V1.4.4__employee.sql
+    |       |   |           V1.5.0__init_db_moredocs.sql
+    |       |   |           V1.5.1__init_db_moretimingdoc.sql
+    |       |   |           V1.5.2__init_db_appoitementmore.sql
+    |       |   |           V1.5.3__init_db_constantevitale.sql
+    |       |   |           V1.5.4__init_db_consulation.sql
+    |       |   |           V1_5_5__fix_sequences.sql
+    |       |   |           
+    |       |   +---dz
+    |       |   |   \---elit
+    |       |   |       \---sihati
+    |       |   |           \---web
+    |       |   |               |   HomeController.class
+    |       |   |               |   ServletInitializer.class
+    |       |   |               |   TestApplication.class
+    |       |   |               |   WebApplication.class
+    |       |   |               |   
+    |       |   |               +---admin
+    |       |   |               |   +---organisationalstructure
+    |       |   |               |   |   \---dto
+    |       |   |               |   |           CenterCreateDto.class
+    |       |   |               |   |           CenterDto.class
+    |       |   |               |   |           CenterShowDto.class
+    |       |   |               |   |           UnitDto.class
+    |       |   |               |   |           UnitEditDto.class
+    |       |   |               |   |           UserDto.class
+    |       |   |               |   |           ZoneCreateDto.class
+    |       |   |               |   |           ZoneDto.class
+    |       |   |               |   |           ZoneShowDto.class
+    |       |   |               |   |           
+    |       |   |               |   \---user
+    |       |   |               |       |   UserController.class
+    |       |   |               |       |   UserResource.class
+    |       |   |               |       |   
+    |       |   |               |       +---dto
+    |       |   |               |       |       AuthorityDto.class
+    |       |   |               |       |       OrganisationalStructureUserDto.class
+    |       |   |               |       |       RoleDto.class
+    |       |   |               |       |       RoleNoAuthDto.class
+    |       |   |               |       |       RoleShowDto.class
+    |       |   |               |       |       StructureDto.class
+    |       |   |               |       |       StructureTokenDto.class
+    |       |   |               |       |       UserAddDto.class
+    |       |   |               |       |       UserDto.class
+    |       |   |               |       |       UserListDto.class
+    |       |   |               |       |       UserUpdatePasswordDto.class
+    |       |   |               |       |       
+    |       |   |               |       \---mapper
+    |       |   |               |               OrganisationalStructureDtoMapper.class
+    |       |   |               |               OrganisationalStructureDtoMapperImpl.class
+    |       |   |               |               
+    |       |   |               +---audit
+    |       |   |               |       AuditConfig$SecurityAuditor.class
+    |       |   |               |       AuditConfig.class
+    |       |   |               |       
+    |       |   |               +---care
+    |       |   |               |   +---ConstanteVitale
+    |       |   |               |   |       ConstanteVitaleController.class
+    |       |   |               |   |       ConstanteVitaleResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---consultation
+    |       |   |               |   |       ConsultationController.class
+    |       |   |               |   |       ConsultationResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---dashboard
+    |       |   |               |   |       DashboardController.class
+    |       |   |               |   |       DashboardResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---medicaldoc
+    |       |   |               |   |       MedicalDocController.class
+    |       |   |               |   |       MedicalDocResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---MedReportDownLoad
+    |       |   |               |   |       MedReportDownloadController.class
+    |       |   |               |   |       MedReportDownloadResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---pathologie
+    |       |   |               |   |       GetPathologieController.class
+    |       |   |               |   |       GetPathologieResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---requestappointment
+    |       |   |               |   |       RequestAppointmentController.class
+    |       |   |               |   |       RequestAppointmentResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---requestcarecoverage
+    |       |   |               |   |       RequestCareCoverageController.class
+    |       |   |               |   |       RequestCareCoverageResource.class
+    |       |   |               |   |       
+    |       |   |               |   \---timingdoctor
+    |       |   |               |           TimingDoctorController.class
+    |       |   |               |           TimingDoctorResource.class
+    |       |   |               |           
+    |       |   |               +---commons
+    |       |   |               |   +---apierrors
+    |       |   |               |   |       ApiError.class
+    |       |   |               |   |       ApiSubError.class
+    |       |   |               |   |       ApiValidationError.class
+    |       |   |               |   |       CustomAccessDeniedHandler.class
+    |       |   |               |   |       LowerCaseClassNameResolver.class
+    |       |   |               |   |       RestExceptionHandler.class
+    |       |   |               |   |       
+    |       |   |               |   +---controller
+    |       |   |               |   |       BaseController.class
+    |       |   |               |   |       
+    |       |   |               |   \---enums
+    |       |   |               |       +---controller
+    |       |   |               |       |       EnumsController.class
+    |       |   |               |       |       
+    |       |   |               |       +---dto
+    |       |   |               |       |       EnumDto$EnumDtoBuilder.class
+    |       |   |               |       |       EnumDto.class
+    |       |   |               |       |       
+    |       |   |               |       \---mapper
+    |       |   |               |               EnumsMapper.class
+    |       |   |               |               EnumsMapperImpl.class
+    |       |   |               |               
+    |       |   |               +---configuration
+    |       |   |               |   |   ConfigurationController.class
+    |       |   |               |   |   ConfigurationRessource.class
+    |       |   |               |   |   
+    |       |   |               |   +---internationalization
+    |       |   |               |   |       Internationalization.class
+    |       |   |               |   |       
+    |       |   |               |   \---task
+    |       |   |               |           TaskConfig.class
+    |       |   |               |           TaskScriptData.class
+    |       |   |               |           
+    |       |   |               +---NewNotification
+    |       |   |               |       NewNotificationController.class
+    |       |   |               |       NewNotificationResource.class
+    |       |   |               |       
+    |       |   |               +---notification
+    |       |   |               |   |   NotificationWebSocketHandler.class
+    |       |   |               |   |   
+    |       |   |               |   +---config
+    |       |   |               |   |       WebSocketConfig.class
+    |       |   |               |   |       
+    |       |   |               |   \---domain
+    |       |   |               |           Notification.class
+    |       |   |               |           
+    |       |   |               +---reference
+    |       |   |               |   +---AyantDroit
+    |       |   |               |   |       AyantDroitController.class
+    |       |   |               |   |       AyantDroitResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---commune
+    |       |   |               |   |       CommuneController.class
+    |       |   |               |   |       CommuneResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---healthprofessionalmedicalcenter
+    |       |   |               |   |       HealthProfessionalMedicalCenterController.class
+    |       |   |               |   |       HealthProfessionalMedicalCenterResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---patient
+    |       |   |               |   |       PatientController.class
+    |       |   |               |   |       PatientResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---Provider
+    |       |   |               |   |       ProviderController.class
+    |       |   |               |   |       ProviderResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---refcode
+    |       |   |               |   |       RefCodeController.class
+    |       |   |               |   |       RefCodeResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---refcodedomain
+    |       |   |               |   |       RefCodeDomainController.class
+    |       |   |               |   |       RefCodeDomainResource.class
+    |       |   |               |   |       
+    |       |   |               |   +---specialty
+    |       |   |               |   |       SpecialtyController.class
+    |       |   |               |   |       SpecialtyResource.class
+    |       |   |               |   |       
+    |       |   |               |   \---wilaya
+    |       |   |               |           WilayaController.class
+    |       |   |               |           WilayaResource.class
+    |       |   |               |           
+    |       |   |               +---security
+    |       |   |               |   +---auth
+    |       |   |               |   |       AuthenticationFailureListener.class
+    |       |   |               |   |       JwtAuthenticationRequest.class
+    |       |   |               |   |       LoginAttemptService.class
+    |       |   |               |   |       RestAuthenticationEntryPoint.class
+    |       |   |               |   |       TokenAuthenticationFilter.class
+    |       |   |               |   |       TokenBasedAuthentication.class
+    |       |   |               |   |       TokenHelper.class
+    |       |   |               |   |       
+    |       |   |               |   +---config
+    |       |   |               |   |       AngularWebConfig.class
+    |       |   |               |   |       CorsConfig$1.class
+    |       |   |               |   |       CorsConfig.class
+    |       |   |               |   |       RestConfig.class
+    |       |   |               |   |       SecurityProperties.class
+    |       |   |               |   |       UserDetailsServiceImpl.class
+    |       |   |               |   |       WebConfig$1.class
+    |       |   |               |   |       WebConfig.class
+    |       |   |               |   |       WebSecurityConfig$1.class
+    |       |   |               |   |       WebSecurityConfig.class
+    |       |   |               |   |       
+    |       |   |               |   +---controller
+    |       |   |               |   |       AuthenticationController.class
+    |       |   |               |   |       AuthenticationResource.class
+    |       |   |               |   |       
+    |       |   |               |   \---dto
+    |       |   |               |           PasswordChangerDto.class
+    |       |   |               |           UserCaptcha.class
+    |       |   |               |           UserCaptchaUnlock.class
+    |       |   |               |           UserTokenState.class
+    |       |   |               |           
+    |       |   |               \---utils
+    |       |   |                       SecurityUtils.class
+    |       |   |                       
+    |       |   \---static
+    |       |       +---images
+    |       |       |       logo.png
+    |       |       |       
+    |       |       \---templates
+    |       |               report1.jasper
+    |       |               report1.jrxml
+    |       |               
+    |       \---generated-sources
+    |           \---annotations
+    |               \---dz
+    |                   \---elit
+    |                       \---sihati
+    |                           \---web
+    |                               +---admin
+    |                               |   \---user
+    |                               |       \---mapper
+    |                               |               OrganisationalStructureDtoMapperImpl.java
+    |                               |               
+    |                               \---commons
+    |                                   \---enums
+    |                                       \---mapper
+    |                                               EnumsMapperImpl.java
+    |                                               
+    \---uploads
+        \---medical-docs
+            +---16012603060001
+            |       b3857bfa-595e-4c3f-b6f4-04cba2c966ad.png
+            |       f866bea1-dd2c-4687-b50d-5f2efcd0eb7b.png
+            |       
+            +---16012603080002
+            |       50e0c882-c2f9-447e-83f5-d41601cafc80.pdf
+            |       
+            +---16012603080003
+            |       da1584b3-d428-4f66-b761-ea10142071e7.pdf
+            |       
+            \---COV-PEN-002
+                    5e5bc93d-8093-4a92-9e7b-457c6e2da95e.png
+                    
