@@ -1,60 +1,33 @@
 package dz.elit.sihati.utils.logger;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.env.Environment;
-import org.springframework.stereotype.Service;
-import serilogj.Log;
-import serilogj.LoggerConfiguration;
-import serilogj.core.enrichers.PropertyEnricher;
-import serilogj.events.LogEventLevel;
-import serilogj.sinks.rollingfile.RollingFileSinkConfigurator;
-import serilogj.sinks.seq.SeqSinkConfigurator;
+import org.slf4j.Logger;
 
-import java.io.File;
-import java.util.Arrays;
-import java.util.List;
+import org.slf4j.LoggerFactory;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public class LoggerConfigurator {
 
-    @Value("${app.name}")
-    private String applicationName;
-    @Value("${app.logger.level}")
-    private String logEventLevelProperty;
-    @Value("${app.logger.seq.url}")
-    private String seqUrl;
-    @Value("${app.logger.rollingfile.pathtemplate}")
-    private String rollingFilePathTemplate;
+    private static final Logger logger = LoggerFactory.getLogger(LoggerConfigurator.class);
 
-    private final Environment environment;
-
-    public LoggerConfigurator(Environment environment) {
-        this.environment = environment;
+    public static Logger getLogger(Class<?> clazz) {
+        return LoggerFactory.getLogger(clazz);
     }
 
-    public void configureLogger() {
-        LogEventLevel logEventLevel = LogEventLevel.valueOf(logEventLevelProperty);
-        List<String> activeProfiles = Arrays.asList(environment.getActiveProfiles());
-        String profiles = String.join(",", activeProfiles);
+    public void info(String message) {
+        logger.info(message);
+    }
 
-        String[] folders = rollingFilePathTemplate.split("/");
-        File folder = null;
-        for (int i = 0; i < folders.length - 1; i++) {
-            if (i == 0) folder = new File(folders[i]);
-            else folder = new File(folder, folders[i]);
+    public void warn(String message) {
+        logger.warn(message);
+    }
 
-            if (!folder.exists()) folder.mkdirs();
-        }
+    public void error(String message) {
+        logger.error(message);
+    }
 
-        Log.setLogger(new LoggerConfiguration()
-                .with(new PropertyEnricher("Environment",
-                        profiles, true))
-                .with(new PropertyEnricher("Application",
-                        applicationName, true))
-                .writeTo(RollingFileSinkConfigurator.rollingFile(rollingFilePathTemplate),
-                        logEventLevel)
-                .writeTo(SeqSinkConfigurator.seq(seqUrl))
-                .setMinimumLevel(logEventLevel)
-                .createLogger());
+    public void debug(String message) {
+        logger.debug(message);
     }
 }

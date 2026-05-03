@@ -8,10 +8,11 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseCookie;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
-import serilogj.Log;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -29,6 +30,8 @@ import java.util.stream.Collectors;
 @Component
 public class TokenHelper {
 
+    private static final Logger log = LoggerFactory.getLogger(TokenHelper.class);
+
     private static final String AUDIENCE = "web";
     private SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.RS256;
     private SecurityProperties securityProperties;
@@ -45,9 +48,8 @@ public class TokenHelper {
                 username = claims.get().getSubject();
             }
         } catch (Exception e) {
-            Log.error("getUsernameFromToken : {@token}, {@exception}", token, e.getMessage());
+            log.error("getUsernameFromToken : token={}, exception={}", token, e.getMessage());
         }
-
         return Optional.ofNullable(username);
     }
 
@@ -59,9 +61,8 @@ public class TokenHelper {
                 structure = ((LinkedHashMap) claims.get().get("structure")).get("id").toString();
             }
         } catch (Exception e) {
-            Log.error("getUsernameFromToken : {@token}, {@exception}", token, e.getMessage());
+            log.error("getOrganisationelStructureFromToken : token={}, exception={}", token, e.getMessage());
         }
-
         return Optional.ofNullable(structure);
     }
 
@@ -73,9 +74,8 @@ public class TokenHelper {
                 roles = (List<String>) claims.get().get("roles");
             }
         } catch (Exception e) {
-            Log.error("getUsernameFromToken : {@token}, {@exception}", token, e.getMessage());
+            log.error("getRolesFromToken : token={}, exception={}", token, e.getMessage());
         }
-
         return roles;
     }
 
@@ -87,10 +87,8 @@ public class TokenHelper {
                 issueAt = claims.get().getIssuedAt();
             }
         } catch (Exception e) {
-            Log.error("getIssuedAtDateFromToken : {@token}, {@exception}",
-                    token, e.getMessage());
+            log.error("getIssuedAtDateFromToken : token={}, exception={}", token, e.getMessage());
         }
-
         return issueAt;
     }
 
@@ -109,10 +107,8 @@ public class TokenHelper {
                         .compact();
             }
         } catch (Exception e) {
-            Log.error("refreshToken : {@token}, {@exception}", token,
-                    e.getMessage());
+            log.error("generateRefreshToken : token={}, exception={}", token, e.getMessage());
         }
-
         return refreshedToken;
     }
 
@@ -123,7 +119,6 @@ public class TokenHelper {
                                 String fullName,
                                 String email) {
         Path pathPrivate = Paths.get(securityProperties.getPathKeyPrivate());
-
 
         String token = Jwts.builder()
                 .setId(UUID.randomUUID().toString())
@@ -139,12 +134,8 @@ public class TokenHelper {
                 .claim("email", email)
                 .claim("avatar", "assets/images/avatars/profile.jpg")
                 .claim("structure", structureTokenDto)
-                .signWith(signatureAlgorithm,  readPrivateKey(pathPrivate.toFile()))
+                .signWith(signatureAlgorithm, readPrivateKey(pathPrivate.toFile()))
                 .compact();
-
-        /*redisTemplate.opsForHash().put("tokens", username, token);
-        Object tokens = redisTemplate.opsForHash().get("tokens", username);
-        Log.information("tokens {token}", tokens.toString());*/
 
         return token;
     }
@@ -152,8 +143,7 @@ public class TokenHelper {
     private Optional<Claims> getAllClaimsFromToken(String token) {
         Claims claims = null;
         try {
-
-             Path pathPublic = Paths.get(securityProperties.getPathKeyPublic());
+            Path pathPublic = Paths.get(securityProperties.getPathKeyPublic());
             claims = Jwts.parser()
                     .setSigningKey(readPublicKey(pathPublic.toFile()))
                     .parseClaimsJws(token)
@@ -161,9 +151,8 @@ public class TokenHelper {
         } catch (ExpiredJwtException e) {
             claims = e.getClaims();
         } catch (Exception e) {
-            Log.error("getAllClaimsFromToken : {@token}, {@exception}", token, e.getMessage());
+            log.error("getAllClaimsFromToken : token={}, exception={}", token, e.getMessage());
         }
-
         return Optional.ofNullable(claims);
     }
 
@@ -173,11 +162,8 @@ public class TokenHelper {
 
     public Boolean isValidToken(String token, UserDetails userDetails) {
         final Optional<Claims> claims = getAllClaimsFromToken(token);
-
         if (!claims.isPresent()) return false;
-
         String username = claims.get().getSubject();
-
         return userDetails.getUsername().equals(username)
                 && userDetails.isEnabled()
                 && !isTokenExpired(claims.get());
@@ -189,10 +175,8 @@ public class TokenHelper {
             final Optional<Claims> claims = getAllClaimsFromToken(token);
             isExpired = !claims.isPresent() || claims.get().getExpiration().before(new Date());
         } catch (Exception e) {
-            Log.error("isTokenExpired : {@token}, {@exception}", token,
-                    e.getMessage());
+            log.error("isTokenExpired : token={}, exception={}", token, e.getMessage());
         }
-
         return isExpired;
     }
 
@@ -202,37 +186,29 @@ public class TokenHelper {
 
     public boolean isTokenRefreshable(String token) {
         Optional<Claims> claims = getAllClaimsFromToken(token);
-
         if (!claims.isPresent()) return false;
-
         long currentTime = new Date().getTime();
         long expiryTime = claims.get().getExpiration().getTime();
-
         return (currentTime > expiryTime) && (currentTime < (expiryTime + (securityProperties.getRefreshedTimeLapseSeconds() * 1000)));
     }
 
     public Optional<String> getToken(HttpServletRequest request) {
-
-        Optional<String> token= Optional.empty();
-
-
-        if(request.getCookies() != null){
-        try {
-            token = Optional.of(Arrays.stream(request.getCookies()).filter(cookie -> cookie.getName().equals("TOKEN")).collect(Collectors.toList()).get(0).getValue());
-        }catch (Exception e ){
-
-        } }
-
-
-if(!token.isPresent()) {
-    String authHeader = getAuthHeaderFromHeader(request);
-    if (authHeader != null && authHeader.startsWith("Bearer ")) {
-        token= Optional.of(authHeader.substring(7));
+        Optional<String> token = Optional.empty();
+        if (request.getCookies() != null) {
+            try {
+                token = Optional.of(Arrays.stream(request.getCookies())
+                        .filter(cookie -> cookie.getName().equals("TOKEN"))
+                        .collect(Collectors.toList()).get(0).getValue());
+            } catch (Exception e) { }
+        }
+        if (!token.isPresent()) {
+            String authHeader = getAuthHeaderFromHeader(request);
+            if (authHeader != null && authHeader.startsWith("Bearer ")) {
+                token = Optional.of(authHeader.substring(7));
+            }
+        }
+        return token;
     }
-}
-  return  token;
-}
-
 
     public String getAuthHeaderFromHeader(HttpServletRequest request) {
         return request.getHeader(securityProperties.getAuthHeader());
@@ -241,73 +217,61 @@ if(!token.isPresent()) {
     public long getExpiredIn() {
         return securityProperties.getExpiresInSeconds();
     }
-    public static RSAPublicKey readPublicKey(File file)  {
-        try {   String key = new String(Files.readAllBytes(file.toPath()));
 
-
+    public static RSAPublicKey readPublicKey(File file) {
+        try {
+            String key = new String(Files.readAllBytes(file.toPath()));
             String publicKeyPEM = key
                     .replace("-----BEGIN-PUBLIC-KEY-----", "")
                     .replaceAll("\\s+", "")
                     .replace("-----END-PUBLIC-KEY-----", "");
             byte[] encoded = Base64.getDecoder().decode(publicKeyPEM);
-
-        KeyFactory keyFactory = KeyFactory.getInstance("RSA");
-        X509EncodedKeySpec keySpec = new X509EncodedKeySpec(encoded);
-        return (RSAPublicKey) keyFactory.generatePublic(keySpec);
-    }catch (Exception e) {}
-
+            KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+            X509EncodedKeySpec keySpec = new X509EncodedKeySpec(encoded);
+            return (RSAPublicKey) keyFactory.generatePublic(keySpec);
+        } catch (Exception e) { }
         return null;
     }
-    public  static RSAPrivateKey readPrivateKey(File file)  {
+
+    public static RSAPrivateKey readPrivateKey(File file) {
         try {
-
-
-
-        String key = new String(Files.readAllBytes(file.toPath()));
-
-        String privateKeyPEM = key
-                .replace("-----BEGIN-PRIVATE-KEY-----", "")
-                .replaceAll("\\s+", "")
-                .replace("-----END-PRIVATE-KEY-----", "");
-             byte[] encoded = Base64.getDecoder().decode(privateKeyPEM);
-        KeyFactory keyFactory = KeyFactory.getInstance("RSA");
-        PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(encoded);
-        return (RSAPrivateKey) keyFactory.generatePrivate(keySpec);
-
-        }catch (Exception e) {
-
-        }
+            String key = new String(Files.readAllBytes(file.toPath()));
+            String privateKeyPEM = key
+                    .replace("-----BEGIN-PRIVATE-KEY-----", "")
+                    .replaceAll("\\s+", "")
+                    .replace("-----END-PRIVATE-KEY-----", "");
+            byte[] encoded = Base64.getDecoder().decode(privateKeyPEM);
+            KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+            PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(encoded);
+            return (RSAPrivateKey) keyFactory.generatePrivate(keySpec);
+        } catch (Exception e) { }
         return null;
     }
-    public  ResponseCookie generateResponseCookie(String cookieName, String cookieValue ) {
 
-        ResponseCookie cookie = ResponseCookie.from(cookieName, cookieValue) // key & value
+    public ResponseCookie generateResponseCookie(String cookieName, String cookieValue) {
+        return ResponseCookie.from(cookieName, cookieValue)
                 .httpOnly(true)
-                .domain(securityProperties.getIpDomain())  // host
-                .path("/")      // path
+                .domain(securityProperties.getIpDomain())
+                .path("/")
                 .maxAge(Duration.ofHours(1))
-                .sameSite("None")  // sameSite
+                .sameSite("None")
                 .secure(true)
                 .build();
-        return cookie;
     }
 
-
-    public  ResponseCookie removeResponseCookie(String cookieName, String cookieValue ) {
-        ResponseCookie cookie = ResponseCookie.from(cookieName, "") // key & value
+    public ResponseCookie removeResponseCookie(String cookieName, String cookieValue) {
+        return ResponseCookie.from(cookieName, "")
                 .httpOnly(true)
-                .domain(securityProperties.getIpDomain())  // host
-                .path("/")      // path
+                .domain(securityProperties.getIpDomain())
+                .path("/")
                 .maxAge(Duration.ofHours(0))
-                .sameSite("None")  // sameSite
+                .sameSite("None")
                 .secure(true)
                 .build();
-        return cookie;
     }
 
-
-    public  Cookie generateCookies (String cookieName,String cookieValue ){
-        Cookie cookie = new Cookie(cookieName,cookieValue);
+    public Cookie generateCookies(String cookieName, String cookieValue) {
+        Cookie cookie = new Cookie(cookieName, cookieValue);
         cookie.setPath("/");
         cookie.setSecure(true);
         cookie.setHttpOnly(true);
