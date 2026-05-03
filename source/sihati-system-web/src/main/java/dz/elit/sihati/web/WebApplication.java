@@ -2,7 +2,6 @@ package dz.elit.sihati.web;
 
 import dz.elit.sihati.infrastructure.jasper.config.jasperreports.PdfExportConfig;
 import dz.elit.sihati.infrastructure.jasper.config.jasperreports.PdfReportConfig;
-import dz.elit.sihati.utils.logger.LoggerConfigurator;
 import dz.elit.sihati.web.security.config.SecurityProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -32,18 +31,12 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableCaching
 @EnableAsync
 @EnableScheduling
- public class WebApplication  {
-//    @Override
-//    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-//        return application.sources(WebApplication.class);
-//    }
-    public WebApplication(LoggerConfigurator loggerConfigurator) {
-        loggerConfigurator.configureLogger();
-    }
+public class WebApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(WebApplication.class, args);
     }
+
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
