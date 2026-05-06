@@ -22,7 +22,7 @@ FROM eclipse-temurin:21-jre
 WORKDIR /app
 
 COPY --from=build /app/sihati-system-web/target/*.war app.jar
-COPY key/ /app/key/    
+COPY key/ /app/key/
 
 EXPOSE 10000
 
