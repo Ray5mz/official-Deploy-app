@@ -119,6 +119,11 @@ public class TokenHelper {
                                 String fullName,
                                 String email) {
         Path pathPrivate = Paths.get(securityProperties.getPathKeyPrivate());
+        RSAPrivateKey privateKey = readPrivateKey(pathPrivate.toFile());
+
+        if (privateKey == null) {
+            throw new IllegalStateException("Failed to load private key from: " + pathPrivate);
+        }
 
         String token = Jwts.builder()
                 .setId(UUID.randomUUID().toString())
@@ -134,7 +139,7 @@ public class TokenHelper {
                 .claim("email", email)
                 .claim("avatar", "assets/images/avatars/profile.jpg")
                 .claim("structure", structureTokenDto)
-                .signWith(signatureAlgorithm, readPrivateKey(pathPrivate.toFile()))
+                .signWith(signatureAlgorithm, privateKey)
                 .compact();
 
         return token;
@@ -144,8 +149,15 @@ public class TokenHelper {
         Claims claims = null;
         try {
             Path pathPublic = Paths.get(securityProperties.getPathKeyPublic());
+            RSAPublicKey publicKey = readPublicKey(pathPublic.toFile());
+
+            if (publicKey == null) {
+                log.error("getAllClaimsFromToken: failed to load public key from {}", pathPublic);
+                return Optional.empty();
+            }
+
             claims = Jwts.parser()
-                    .setSigningKey(readPublicKey(pathPublic.toFile()))
+                    .setSigningKey(publicKey)
                     .parseClaimsJws(token)
                     .getBody();
         } catch (ExpiredJwtException e) {
@@ -221,30 +233,44 @@ public class TokenHelper {
     public static RSAPublicKey readPublicKey(File file) {
         try {
             String key = new String(Files.readAllBytes(file.toPath()));
+            // Strip all known PEM header/footer variants (with spaces or dashes)
             String publicKeyPEM = key
+                    .replace("-----BEGIN PUBLIC KEY-----", "")
+                    .replace("-----END PUBLIC KEY-----", "")
                     .replace("-----BEGIN-PUBLIC-KEY-----", "")
-                    .replaceAll("\\s+", "")
-                    .replace("-----END-PUBLIC-KEY-----", "");
+                    .replace("-----END-PUBLIC-KEY-----", "")
+                    .replace("-----BEGIN RSA PUBLIC KEY-----", "")
+                    .replace("-----END RSA PUBLIC KEY-----", "")
+                    .replaceAll("\\s+", "");
             byte[] encoded = Base64.getDecoder().decode(publicKeyPEM);
             KeyFactory keyFactory = KeyFactory.getInstance("RSA");
             X509EncodedKeySpec keySpec = new X509EncodedKeySpec(encoded);
             return (RSAPublicKey) keyFactory.generatePublic(keySpec);
-        } catch (Exception e) { }
+        } catch (Exception e) {
+            LoggerFactory.getLogger(TokenHelper.class).error("readPublicKey error: file={}, message={}", file.getPath(), e.getMessage());
+        }
         return null;
     }
 
     public static RSAPrivateKey readPrivateKey(File file) {
         try {
             String key = new String(Files.readAllBytes(file.toPath()));
+            // Strip all known PEM header/footer variants (with spaces or dashes)
             String privateKeyPEM = key
+                    .replace("-----BEGIN PRIVATE KEY-----", "")
+                    .replace("-----END PRIVATE KEY-----", "")
                     .replace("-----BEGIN-PRIVATE-KEY-----", "")
-                    .replaceAll("\\s+", "")
-                    .replace("-----END-PRIVATE-KEY-----", "");
+                    .replace("-----END-PRIVATE-KEY-----", "")
+                    .replace("-----BEGIN RSA PRIVATE KEY-----", "")
+                    .replace("-----END RSA PRIVATE KEY-----", "")
+                    .replaceAll("\\s+", "");
             byte[] encoded = Base64.getDecoder().decode(privateKeyPEM);
             KeyFactory keyFactory = KeyFactory.getInstance("RSA");
             PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(encoded);
             return (RSAPrivateKey) keyFactory.generatePrivate(keySpec);
-        } catch (Exception e) { }
+        } catch (Exception e) {
+            LoggerFactory.getLogger(TokenHelper.class).error("readPrivateKey error: file={}, message={}", file.getPath(), e.getMessage());
+        }
         return null;
     }
 
