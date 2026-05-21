@@ -23,14 +23,12 @@ public class AyantDroitController {
     private final GetPatientByCodeLoad loadPatient;
     private final AyantDroitParentUseCase parentUseCase;
 
-
-
     public List<AyantDroitByEmployeeNumberDtoResponse> getAyantsDroit(String codePatient) {
 
         Patient patient = loadPatient.findPatientByCode(codePatient)
                 .orElseThrow(() -> new RuntimeException("Patient not found"));
 
-        // Si c'est un BENEFICIARY → liste vide
+        // Si c'est un BENEFICIARY → liste vide (un ayant droit n'a pas lui-même des ayants droit)
         if (PatientInternalType.BENEFICIARY.equals(patient.getInternalType())) {
             return Collections.emptyList();
         }
@@ -39,19 +37,18 @@ public class AyantDroitController {
         return useCase.execute(patient.getCode());
     }
 
-
-
     public List<AyantDroitParentDtoResponse> getEmployeeByPatientCode(String codePatient) {
 
         Patient patient = loadPatient.findPatientByCode(codePatient)
                 .orElseThrow(() -> new RuntimeException("Patient not found: " + codePatient));
 
+        // Si c'est un AGENT → il n'a pas de parent employé au-dessus de lui
+        // FIX: la condition était inversée — on retournait vide pour AGENT au lieu de BENEFICIARY
         if (PatientInternalType.AGENT.equals(patient.getInternalType())) {
             return Collections.emptyList();
         }
 
+        // Si c'est un BENEFICIARY → retourner son employé parent
         return parentUseCase.execute(codePatient);
     }
-
-
 }

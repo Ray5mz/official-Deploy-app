@@ -18,23 +18,25 @@ public class AyantDroitResource {
     private final AyantDroitController controller;
 
     /**
-     * GET /api/production/ayantdroit/{employeeNumber}
+     * GET /api/production/ayantdroit/{code}
      * Retourne la liste des ayants droit pour un employé donné
      */
     @GetMapping("/{code}")
     public List<AyantDroitByEmployeeNumberDtoResponse> getAyantsDroitByEmployeeNumber(
             @PathVariable("code") String code) {
 
-        // Appel du controller applicatif
         return controller.getAyantsDroit(code);
     }
 
-
-
+    /**
+     * GET /api/production/ayantdroit/parent/{code}
+     * Retourne l'employé parent d'un ayant droit (BENEFICIARY)
+     */
     @GetMapping("/parent/{code}")
     public List<AyantDroitParentDtoResponse> getEmployeeByPatientCode(
             @PathVariable("code") String code) {
-        return (List<AyantDroitParentDtoResponse>) controller.getEmployeeByPatientCode(code);
-    }
 
+        // FIX: suppression du cast inutile (List<AyantDroitParentDtoResponse>) qui masquait les erreurs
+        return controller.getEmployeeByPatientCode(code);
+    }
 }
